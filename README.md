@@ -18,6 +18,9 @@ then run `sudo apt install composer` & run `composer install` after composer's i
 if that outputs an error related to php dependencies issues such as "ext-dom"  or "ext-curl"
 then run `sudo apt-get update && sudo apt install php-xml php-curl` & run `composer install` after php-xml is installed  
 
+run `npm install --only=prod`
+if not installed on server run `sudo apt install npm` and try again
+
 run `chmod -R 777 storage bootstrap/cache`  
 run `cp .env.example .env`  
 run `php artisan key:generate`  
@@ -49,9 +52,15 @@ hit `Ctl + x` while in editor to exit and write updates to file
 hit `y` when prompted and `enter` afterwards when it tells you what filename it's saving as 
 
 ## Database Setup
+run `mysql -u root` to login to mysql
+run `create database ArtGalleryWebsite`
+run `CREATE USER 'ArtGalleryWebsite'@'localhost' IDENTIFIED BY 'NEWPASSWORDHERE';`
+run `grant all privileges on *.* to 'ArtGalleryWebsite'@'localhost';`
+run `flush privileges;`
+run `nano .env` and update database info and when you're done, `CTRL+X` out to exit and enter `y` when prompted
 run `php artisan migrate` to have the database schema created
 run `php artisan db:seed` to load the database with seed data.  There is a Color, and User seeder that will run
-run `mysql -u [user] -p [pass] [database_name] < [filename].sql` to populate the database with the rest of the data
+run `mysql -u ArtGalleryWebsite -p ArtGalleryWebsite < ArtGalleryWebsite.sql` to populate the database with the rest of the data
 
 ## Host Setup
 run `sudo nano /etc/hosts`  
