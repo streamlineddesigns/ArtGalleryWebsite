@@ -1,0 +1,64 @@
+@extends('collections.app')
+
+@section('content')
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-left">
+                <h2>Laravel 8 CRUD </h2>
+            </div>
+            <div class="pull-right">
+                <a class="btn btn-success" href="{{ route('collections.create') }}" title="Create a collection"> <i class="fas fa-plus-circle"></i>
+                    </a>
+            </div>
+        </div>
+    </div>
+
+    @if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+    @endif
+
+    <table class="table table-bordered table-responsive-lg">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>description</th>
+            <th>background_image_url</th>
+            <th>name_color_id</th>
+            <th width="280px">Action</th>
+        </tr>
+        @foreach ($collections as $collection)
+            <tr>
+                <td>{{ $collection->id }}</td>
+                <td>{{ $collection->name }}</td>
+                <td>{{ $collection->description }}</td>
+                <td>{{ $collection->background_image_url }}</td>
+                <td>{{ $collection->name_color_id }}</td>
+                <td>
+                    <form action="{{ route('collections.destroy', $collection->id) }}" method="POST">
+
+                        <a href="{{ route('collections.show', $collection->id) }}" title="show">
+                            <i class="fas fa-eye text-success  fa-lg"></i>
+                        </a>
+
+                        <a href="{{ route('collections.edit', $collection->id) }}">
+                            <i class="fas fa-edit  fa-lg"></i>
+                        </a>
+
+                        @csrf
+                        @method('DELETE')
+
+                        <button type="submit" title="delete" style="border: none; background-color:transparent;">
+                            <i class="fas fa-trash fa-lg text-danger"></i>
+
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        @endforeach
+    </table>
+
+    {!! $collections->links() !!}
+
+@endsection

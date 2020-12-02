@@ -1,0 +1,576 @@
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed span{
+	color:  #fff;
+	font-family: "SF Pro Display";
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.footer-distributed h3 span{
+	color:  #fff;
+}
+
+/* Footer links */
+
+.telephone {
+  color: #BC9143 !important;
+}
+
+.footer-distributed .footer-links{
+	color:  #BC9143;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #fff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #BC9143;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #fff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../fonts/SF-Pro-Text-Medium.woff);
+  font-display: swap;
+}
+
+.custom-navbar {
+  background-color: transparent;
+}
+
+.custom-navbar .navbar-nav .dropdown-menu {
+  background-color: transparent;
+  border: none;
+}
+
+.custom-navbar-brand span {
+  font-family: "SF Pro Display";
+  color: #BC9143;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.custom-navbar-brand span:first-of-type {
+  font-weight: 800;
+}
+
+.custom-navbar-brand span:last-of-type {
+  font-weight: 200;
+}
+
+.custom-navbar a.nav-link {
+  font-size: 22px;
+  color: #BC9143;
+  font-weight: 800;
+  text-align: center;
+  padding: 0px 15px 0px 15px !important;
+  font-family: "SF Pro Display";
+}
+
+.hero-image {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN.jpg");
+  height: 100vh;
+}
+
+.hero-image-about {
+  background-image: url("../img/Pics of Laurie/200811_IMG_0015 2.jpg");
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.custom-dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-item {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+}
+
+.img-logo, .img-logo2 {
+  height: 75px !important;
+}
+
+.custom-container {
+  margin: 0px !important;
+  padding: 0px !important;
+  min-width: 100%;
+}
+
+.row {
+  width: 100% !important;
+  margin: 0px !important;
+}
+
+label {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.row-header {
+  font-family: "SF Pro Display";
+  margin: 0;
+  font-weight: 700;
+  color: #BC9143;
+  text-transform: uppercase;
+}
+
+.row-header span {
+  font-weight: 400;
+}
+
+.btn-custom {
+  padding: 5px 40px 5px 40px !important;
+  min-width: 300px;
+  color: #615E5E !important;
+  font-size: 20px !important;
+  font-family: 'SF PRO DISPLAY';
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  border: none !important;
+  border-radius: 25px !important;
+  background: #BC9143;
+  background-image: -webkit-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -moz-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -ms-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -o-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -webkit-gradient(to bottom, #BC9143, #FFDEA2);
+}
+
+.btn-custom:hover, .btn-custom:active, .btn-custom:focus {
+  border: none !important;
+  outline: none !important;
+  background: #FFDEA2;
+  background-image: -webkit-linear-gradient(top, #FFDEA2, #BC9143) !important;
+  background-image: -moz-linear-gradient(top, #FFDEA2, #BC9143) !important;
+  background-image: -ms-linear-gradient(top, #FFDEA2, #BC9143) !important;
+  background-image: -o-linear-gradient(top, #FFDEA2, #BC9143) !important;
+  background-image: -webkit-gradient(to bottom, #FFDEA2, #BC9143) !important;
+}
+
+.row p {
+  font-family: "SF Pro Display";
+    font-weight: 100;
+    line-height: 1.5;
+    color: #615E5E;
+}
+
+.row-header-large {
+  margin-bottom: 25px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1 !important;
+}
+
+.custom-carosel-button {
+  color: white !important;
+  font-size: 20px !important;
+  font-family: 'SF PRO DISPLAY';
+  text-transform: uppercase;
+  border: none !important;
+  border-radius: 50% !important;
+  background: #BC9143;
+  background-image: -webkit-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -moz-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -ms-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -o-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -webkit-gradient(to bottom, #BC9143, #FFDEA2);
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 16px !important;
+  padding-bottom: 12px !important;
+  min-width: auto !important;
+}
+
+.form-control {
+  border-radius: 25px !important;
+  padding-left: 15px !important;
+}
+
+
+textarea {
+  resize: none !important;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+.blue-branding-color {
+  color: #3B6A99;
+}
+
+.black-branding-color {
+  color: #13343B;
+}
+
+.custom-link {
+  background-color: transparent !important;
+}
+
+/* Small devices (landscape phones, 576px and up)  */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Small & Medium devices (desktops, 992px and DOWN)  */
+@media (max-width: 992px) {
+  .img-logo, .img-logo2 {
+    float: left;
+  }
+
+  .custom-navbar-brand span:last-of-type {
+    display: block;
+  }
+
+  .footer-distributed {
+    padding-bottom: 4px;
+  }
+}
+
+/* Large devices (desktops, 992px and up)  */
+@media (min-width: 992px) { 
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up)  */
+@media (min-width: 1200px) { 
+
+}
