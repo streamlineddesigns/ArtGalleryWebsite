@@ -89,7 +89,7 @@
                     <p>
                         {{$value->description}}
                     </p>
-                    <a href="/#artgallery" role="button"class="btn btn-custom" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">Check Out Gallery</a>
+                    <a href="" role="button"class="btn btn-custom" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">I'm interested in this</a>
                 </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                     <p>
                         {{$value->description}}
                     </p>
-                    <a href="/#artgallery" role="button"class="btn btn-custom" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">Check Out Gallery</a>
+                    <a href="" role="button"class="btn btn-custom" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">I'm interested in this</a>
                 </div>
                 <div class="col-lg-7 px-0">
                     <img class="img-fluid" src="{{url( $value->image_url)}}" alt="Painting">

@@ -1,61 +1,94 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## SSH Into The Server
+run `ssh root@ipaddressofyourserver` and type in password when prompted unless using ssh keys then you'll login automatically
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Web User Setup
+run `sudo useradd web`  
+run `sudo passwd web` and set the password for web when prompted  
 
-## About Laravel
+## Clone Repository
+run `cd /var/www`  
+run `git clone https://github.com/streamlineddesigns/ArtGalleryWebsite.git` and enter git username/password when prompted  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Laravel Setup
+run `cd ArtGalleryWebsite`  
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+run `composer install`  
+if that command outputs an error that says "Command composer not found"  
+then run `sudo apt install composer` & run `composer install` after composer's installed  
+if that outputs an error related to php dependencies issues such as "ext-dom"  or "ext-curl"
+then run `sudo apt-get update && sudo apt install php-xml php-curl` & run `composer install` after php-xml is installed  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+run `chmod -R 777 storage bootstrap/cache`  
+run `cp .env.example .env`  
+run `php artisan key:generate`  
+run `cd ../`  
+run `chown -R web:www-data ArtGalleryWebsite`  
+run `cd ArtGalleryWebsite/public`  
+run `chown root:root .htaccess`  
 
-## Learning Laravel
+## Apache Setup
+run `sudo a2enmod rewrite`  
+run `sudo service apache2 restart`  
+run `cd /etc/apache2/sites-available`  
+run `cp 000-default.conf ArtGalleryWebsite.conf`  
+run `sudo nano ArtGalleryWebsite.conf`  
+change `DocumentRoot` value to `/var/www/ArtGalleryWebsite/public`  
+set `ServerName` to `www.WEBSITENAMEHERE.com` or add it after ServerAdmin line  
+after that add `ServerAlias www.WEBSITENAMEHERE.com`  
+Change `Directory` as follows  
+```
+<Directory /var/www/ArtGalleryWebsite/public/>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Order allow,deny
+    allow from all
+    Require all granted
+</Directory>
+```
+hit `Ctl + x` while in editor to exit and write updates to file  
+hit `y` when prompted and `enter` afterwards when it tells you what filename it's saving as 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Database Setup
+run `php artisan migrate` to have the database schema created
+run `php artisan db:seed` to load the database with seed data.  There is a Color, and User seeder that will run
+run `mysql -u [user] -p [pass] [database_name] < [filename].sql` to populate the database with the rest of the data
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Host Setup
+run `sudo nano /etc/hosts`  
+add `127.0.0.1 ArtGalleryWebsite`  
+hit `Ctl + x` while in editor to exit and write updates to file  
+hit `y` when prompted and `enter` afterwards when it tells you what filename it's saving as  
 
-## Laravel Sponsors
+## Enable The Website
+run `sudo a2ensite ArtGalleryWebsite.conf`  
+run `sudo a2dissite 000-default`  
+run `sudo service apache2 restart`  
+visit server ip address to confirm website is working  
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Setup Domain Name
+Every provider will have a different way of going about this, however, I'll use godaddy as an example
+You'll log into the account that has the domain name "ArtGalleryWebsite" and go into your dns settings for that domain
+and you'll create a new "a name" record that maps the domain name to your servers IP address. Then you'll set the ttl
+and save. After "time til live", ArtGalleryWebsite will be accessible by domain name instead of just ip.
 
-### Premium Partners
+## Pulling New Changes From Git  
+run `cd /var/www/ArtGalleryWebsite`  
+run `git pull origin master`  
+run `cd ../`  
+run `chown -R web:www-data ArtGalleryWebsite`  
+run `cd ArtGalleryWebsite`  
+run `chmod -R 777 storage bootstrap/cache`  
+run `cd public`  
+run `chown root:root .htaccess`  
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+## Other + References
+add ssl certificates from hosting provider  
+This is pretty straightforward. You purchase the certificates, generate some info on the server that your provider will ask for
+then they typically give you a few ssl related files that need to be placed on the web server. (crt,key,pem,etc)
 
-## Contributing
+make sure text compression is enabled(mod_deflate)  
+https://devops.ionos.com/tutorials/how-to-configure-mod_deflate-for-apache-on-centos-7/
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+make sure http2 is setup(needs ssl certs on server first) 
+this resource also outlines how your apache config file should be altered to support ssl & http2. Just make sure virtual host for 443 gets appended to ArtGalleryWebsite.conf and that the Directory portion is added to it, and ssl cert & key locations are correct  
+https://www.howtoforge.com/how-to-enable-http-2-in-apache/
