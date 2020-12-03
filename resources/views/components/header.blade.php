@@ -1,4 +1,8 @@
-  <!--Navigation-->
+<?php
+use App\Models\Collection;
+  $header_collections = Collection::all()->reverse();
+?>
+<!--Navigation-->
   <nav class="navbar fixed-top navbar-dark navbar-frosted-glass position-absolute navbar-expand-lg custom-navbar">
     <a class="navbar-brand custom-navbar-brand" href="/">
       <img class="img-fluid img-logo" src="{{url('img/logo.png')}}" alt="logo">
@@ -14,19 +18,15 @@
         <li class="nav-item">
           <a class="nav-link" href="{{url('/#artgallery')}}">Art Gallery</a>
         </li>
-        <!--<li class="nav-item dropdown">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle custom-dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Collections
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">The Breakup Collection</a>
-            <a class="dropdown-item" href="#">The Garden Collection</a>
-            <a class="dropdown-item" href="#">The True Collection</a>
-            <a class="dropdown-item" href="#">The Skribble Collection</a>
+          <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
+            @foreach($header_collections as $key => $value)
+            <a class="dropdown-item dropdown-item-custom d-flex align-items-center flex-column justify-content-center text-center" href="{{url('art/collections/' . $value->id)}}">{{$value->name}}</a>
+            @endforeach
           </div>
-        </li>-->
-        <li class="nav-item">
-          <a class="nav-link" href="{{url('#')}}">Collections</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{url('about')}}">About</a>

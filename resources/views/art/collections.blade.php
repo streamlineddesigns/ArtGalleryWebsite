@@ -37,6 +37,7 @@
             padding-right: 20px;
         }
 
+        /* Small Devices */
         @media (max-width: 992px) {
             .collection_paintings img {
                 max-width: calc((100vw / {{$collection_data->count()}}) - 10px) !important;
@@ -44,7 +45,12 @@
                 padding-right: 5px;
             }
         }
-        /* End css */
+        /* Large Devices */
+        @media (min-width: 992px) {
+            .custom-navbar a.nav-link, .custom-navbar-brand span {
+                color: white !important;
+            }
+        }
     </style>
 </head>
 

@@ -405,15 +405,6 @@ textarea {
   background-image: url("../img/Pics of Laurie/200811_IMG_0015 2.jpg");
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-menu a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-menu {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
 .custom-dropdown-toggle::after {
   display: none !important;
 }
@@ -491,6 +482,15 @@ label {
   background-image: -ms-linear-gradient(top, #FFDEA2, #BC9143) !important;
   background-image: -o-linear-gradient(top, #FFDEA2, #BC9143) !important;
   background-image: -webkit-gradient(to bottom, #FFDEA2, #BC9143) !important;
+}
+
+.dropdown-item-custom {
+  text-align: center !important;
+}
+
+.dropdown-item-custom:hover, .dropdown-item-custom:active, .dropdown-item-custom:focus {
+  color: #16181b !important;
+  background-color: white !important;
 }
 
 .row p {
@@ -599,11 +599,34 @@ textarea {
   .custom-navbar a.nav-link {
     height: 50px;
   }
+
+  .dropdown-menu-custom {
+    margin-top: -25px !important;
+  }
+
+  .dropdown-item {
+    min-height: 48px;
+  }
 }
 
 /* Large devices (desktops, 992px and up)  */
 @media (min-width: 992px) { 
-  
+  .dropdown-menu-custom {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(6px);
+    border-bottom-left-radius: 25% !important;
+    border-bottom-right-radius: 25% !important;
+    margin-left: -40px !important;
+  }
+
+  .dropdown-item {
+    min-height: 48px;
+  }
+
+  .dropdown-item:last-of-type {
+    border-bottom-left-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)  */
