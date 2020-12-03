@@ -76,33 +76,13 @@
   <div class="container custom-container" id="artgallery">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="img/Galleries/Gallery09-min.jpg" alt="First slide">
+        {{$icp = 0}}
+        @foreach($collections as $key => $value)
+        <div class="carousel-item @if($icp == 0) active @endif">
+          <a href="{{ url('art/collections/' . $value->id) }}"><img class="d-block w-100" src="{{ url($value->background_image_url) }}" alt="Collection {{ url($value->id) }}"></a>
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/Galleries/Gallery02-min.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/Galleries/Gallery01-min.jpg" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/Galleries/Gallery04-min.jpg" alt="Fourth slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/Galleries/Gallery03-min.jpg" alt="Fifth slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/Galleries/Gallery08-min.jpg" alt="Sixth slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/Galleries/Gallery05-min.jpg" alt="Seventh slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/Galleries/Gallery06-min.jpg" alt="Eighth slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/Galleries/Gallery07-min.jpg" alt="Ninth slide">
-        </div>
+        {{$icp++}}
+        @endforeach
       </div>
       <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
         <button class="btn-custom custom-carosel-button ml-3"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>

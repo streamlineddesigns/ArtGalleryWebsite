@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\CollectionController;
 use App\Http\Controllers\PaintingController;
 use App\Http\Controllers\ArtCollectionController;
+use App\Http\Controllers\IndexController;
 
 
 /*
@@ -20,9 +21,7 @@ use App\Http\Controllers\ArtCollectionController;
 
 //used by public for browsing website
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/about', function () {
     return view('about');

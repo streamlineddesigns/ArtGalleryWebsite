@@ -89,6 +89,8 @@ run `cd ArtGalleryWebsite`
 run `chmod -R 777 storage bootstrap/cache`  
 run `cd public`  
 run `chown root:root .htaccess`  
+run `cd /var/www`
+run `chown root:root ArtGalleryWebsite`
 
 ## Other + References
 add ssl certificates from hosting provider  
