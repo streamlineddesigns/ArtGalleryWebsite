@@ -394,7 +394,7 @@ textarea {
 }
 
 .hero-image {
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN.jpg");
@@ -606,6 +606,14 @@ textarea {
 
   .dropdown-item {
     min-height: 48px;
+  }
+
+  .hero-image {
+    background-image: url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN_MOBILE.jpg");
+  }
+
+  .hero-image-about {
+    background-image: url("../img/Pics of Laurie/200811_IMG_0015 2_MOBILE.jpg");
   }
 }
 
