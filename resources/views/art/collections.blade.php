@@ -36,6 +36,14 @@
             padding-left: 20px;
             padding-right: 20px;
         }
+
+        @media (max-width: 992px) {
+            .collection_paintings img {
+                max-width: calc((100vw / {{$collection_data->count()}}) - 10px) !important;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
         /* End css */
     </style>
 </head>
@@ -79,7 +87,7 @@
                 <div class="col-lg-7 px-0">
                     <img class="img-fluid" src="{{url( $value->image_url)}}" alt="Painting">
                 </div>
-                <div class="col-lg-5 d-flex align-items-center flex-column justify-content-center text-center py-3">
+                <div class="col-lg-5 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
                     <h2 class="row-header row-header-large text-transform-none" style="color: {{$colors->find($value->name_color_id)->hex_value}};">{{$value->name}}</h2>
                     <p>
                         {{$value->description}}
@@ -93,16 +101,16 @@
             <!-- About 2 -->
             <div class="container custom-container">
                 <div class="row">
-                <div class="col-lg-5 d-flex align-items-center flex-column justify-content-center text-center py-3">
-                    <h2 class="row-header row-header-large text-transform-none" style="color: {{$colors->find($value->name_color_id)->hex_value}};">{{$value->name}}</h2>
-                    <p>
-                        {{$value->description}}
-                    </p>
-                    <a href="" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">I'm interested in this</a>
-                </div>
-                <div class="col-lg-7 px-0">
-                    <img class="img-fluid" src="{{url( $value->image_url)}}" alt="Painting">
-                </div>
+                    <div class="col-lg-7 px-0">
+                        <img class="img-fluid" src="{{url( $value->image_url)}}" alt="Painting">
+                    </div>
+                    <div class="order-lg-first col-lg-5 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
+                        <h2 class="row-header row-header-large text-transform-none" style="color: {{$colors->find($value->name_color_id)->hex_value}};">{{$value->name}}</h2>
+                        <p>
+                            {{$value->description}}
+                        </p>
+                        <a href="" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">I'm interested in this</a>
+                    </div>
                 </div>
             </div>
             <!--/About 2-->

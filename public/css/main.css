@@ -568,6 +568,11 @@ textarea {
   .footer-distributed {
     padding-bottom: 4px;
   }
+
+  .col-mobile-padded {
+    margin-top: 45px !important;
+    margin-bottom: 25px;
+  }
 }
 
 /* Large devices (desktops, 992px and up)  */
