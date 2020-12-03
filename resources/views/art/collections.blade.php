@@ -36,11 +36,6 @@
             padding-left: 20px;
             padding-right: 20px;
         }
-
-        .btn-custom {
-            color: white !important;
-            background-image: none;
-        }
         /* End css */
     </style>
 </head>
@@ -89,7 +84,7 @@
                     <p>
                         {{$value->description}}
                     </p>
-                    <a href="" role="button"class="btn btn-custom" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">I'm interested in this</a>
+                    <a href="" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">I'm interested in this</a>
                 </div>
                 </div>
             </div>
@@ -103,7 +98,7 @@
                     <p>
                         {{$value->description}}
                     </p>
-                    <a href="" role="button"class="btn btn-custom" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">I'm interested in this</a>
+                    <a href="" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">I'm interested in this</a>
                 </div>
                 <div class="col-lg-7 px-0">
                     <img class="img-fluid" src="{{url( $value->image_url)}}" alt="Painting">

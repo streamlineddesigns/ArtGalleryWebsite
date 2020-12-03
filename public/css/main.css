@@ -468,6 +468,11 @@ label {
   background-image: -webkit-gradient(to bottom, #BC9143, #FFDEA2);
 }
 
+.btn-custom-white-mod {
+  color: white !important;
+  background-image: none;
+}
+
 .btn-custom:hover, .btn-custom:active, .btn-custom:focus {
   border: none !important;
   outline: none !important;
