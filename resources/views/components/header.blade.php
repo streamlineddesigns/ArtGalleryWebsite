@@ -1,5 +1,5 @@
   <!--Navigation-->
-  <nav class="navbar fixed-top position-absolute navbar-expand-lg custom-navbar">
+  <nav class="navbar fixed-top navbar-dark navbar-frosted-glass position-absolute navbar-expand-lg custom-navbar">
     <a class="navbar-brand custom-navbar-brand" href="/">
       <img class="img-fluid img-logo" src="{{url('img/logo.png')}}" alt="logo">
       <span>Laurie LaFrate</span>
@@ -9,6 +9,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <hr>
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="{{url('/#artgallery')}}">Art Gallery</a>

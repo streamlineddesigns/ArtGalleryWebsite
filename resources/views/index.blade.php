@@ -36,9 +36,9 @@
   <div class="container custom-container">
     <div class="row">
       <div class="col-lg-5 px-0">
-        <img class="img-fluid" src="img/Pics of Laurie/200730_IMG_0082.jpg" alt="Laurie sitting in a chair">
+        <img class="img-fluid hidden-on-mobile" src="img/Pics of Laurie/200730_IMG_0082.jpg" alt="Laurie sitting in a chair">
       </div>
-      <div class="col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3">
+      <div class="col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
         <span class="row-header row-header-small">Meet the artist</span>
         <h2 class="row-header row-header-large">About Laurie LaFrate</h2>
         <p>

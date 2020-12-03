@@ -351,6 +351,15 @@ textarea {
   font-display: swap;
 }
 
+.navbar-dark .navbar-toggler, .navbar-dark .navbar-toggler:focus, .navbar-dark .navbar-toggler:active {
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("../img/menu.png") !important;
+}
+
 .custom-navbar {
   background-color: transparent;
 }
@@ -377,7 +386,7 @@ textarea {
 
 .custom-navbar a.nav-link {
   font-size: 22px;
-  color: #BC9143;
+  color: #BC9143 !important;
   font-weight: 800;
   text-align: center;
   padding: 0px 15px 0px 15px !important;
@@ -563,6 +572,7 @@ textarea {
 
   .custom-navbar-brand span:last-of-type {
     display: block;
+    text-align: center;
   }
 
   .footer-distributed {
@@ -572,6 +582,22 @@ textarea {
   .col-mobile-padded {
     margin-top: 45px !important;
     margin-bottom: 25px;
+  }
+
+  .hidden-on-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  .navbar-frosted-glass {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(6px);
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+  }
+
+  .custom-navbar a.nav-link {
+    height: 50px;
   }
 }
 

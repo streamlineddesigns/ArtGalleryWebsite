@@ -36,9 +36,9 @@
   <div class="container custom-container">
     <div class="row">
       <div class="col-lg-5 px-0">
-        <img class="img-fluid" src="img/Pics of Laurie/200730_IMG_0040.jpg" alt="Laurie sitting in a chair">
+        <img class="img-fluid hidden-on-mobile" src="img/Pics of Laurie/200730_IMG_0040.jpg" alt="Laurie sitting in a chair">
       </div>
-      <div class="col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3">
+      <div class="col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
         <span class="row-header row-header-small">Meet the artist</span>
         <h2 class="row-header row-header-large text-transform-none black-branding-color">About Laurie LaFrate</h2>
         <p>
@@ -69,7 +69,10 @@
   <!-- About 2-->
   <div class="container custom-container">
     <div class="row">
-      <div class="col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3">
+      <div class="col-lg-5 px-0">
+        <img class="img-fluid" src="img/Pics of Laurie/200525_A_IMG_9834.jpg" alt="Laurie sitting in a chair">
+      </div>
+      <div class="order-lg-first col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
         <h2 class="row-header row-header-large text-transform-none blue-branding-color">One can’t <i>not</i> feel emotions looking at Laurie’s art.</h2>
         <p>
             Regardless of where she is in her life, Laurie is her happiest and most productive in her studio—where she paints for hours on end. Some of her favorite artists growing up that still inspire her today include, Cy Twombly, Hans Hoffman, and Joan Michell.
@@ -81,9 +84,6 @@
             Laurie creates for everyone and does not follow a specific brand or style. She borrows from her real time experiences and moods, and lends her passion for the process of creation to all of her pieces. While there are noticeable themes and threads throughout her body of work—especially among her collections—her works are an authentic, ever-evolving experimentation of what feels bright and right in the moment, with no specific outcome in mind. 
         </p>
         <a href="#contact" role="button" class="btn btn-custom">Connect With Laurie</a>
-      </div>
-      <div class="col-lg-5 px-0">
-        <img class="img-fluid" src="img/Pics of Laurie/200525_A_IMG_9834.jpg" alt="Laurie sitting in a chair">
       </div>
     </div>
   </div>
