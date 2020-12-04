@@ -47624,8 +47624,11 @@ var render = function() {
           _c(
             "div",
             { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
-            [_c("welcome")],
-            1
+            [
+              _vm._v(
+                "\n                Nothing to show here yet, but you can add new collections & paintings using the navigation links at the top.\n            "
+              )
+            ]
           )
         ])
       ])

@@ -23,14 +23,14 @@
 
     <table class="table table-striped table-dark table-bordered table-responsive">
         <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>description</th>
-            <th>footer_text</th>
-            <th>price</th>
-            <th>image_url</th>
-            <th>name_color_id</th>
-            <th>button_color_id</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Footer Text</th>
+            <th>Price</th>
+            <th>Image URL</th>
+            <th>Name Color ID</th>
+            <th>Button Color ID</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($paintings as $painting)
