@@ -32,17 +32,19 @@
         }
 
         .collection_paintings img {
-            max-width: calc((100vw / {{$collection_data->count()}}) - 40px) !important;
-            padding-left: 20px;
-            padding-right: 20px;
+            max-width: calc( ((100vw / {{$collection_data->count()}}) - 40px) * 1.6 ) !important;
+            padding-left: 10px;
+            padding-right: 10px;
+            max-height: calc( ((100vw / {{$collection_data->count()}}) - 40px) * 0.9 ) !important;
         }
 
         /* Small Devices */
         @media (max-width: 992px) {
             .collection_paintings img {
-                max-width: calc((100vw / {{$collection_data->count()}}) - 10px) !important;
-                padding-left: 5px;
-                padding-right: 5px;
+                max-width: calc( ((100vw / {{$collection_data->count()}}) - 10px) * 1.6 ) !important;
+                padding-left: 2.5px;
+                padding-right: 2.5px;
+                max-height: calc( ((100vw / {{$collection_data->count()}}) - 10px) * 0.9 ) !important;
             }
         }
         /* Large Devices */

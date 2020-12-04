@@ -12,6 +12,11 @@ th {
     color: #BC9143 !important;
 }
 
+.form-control {
+    border-radius: 25px !important;
+    padding-left: 15px !important;
+}
+
 textarea {
     resize: none;
 }
