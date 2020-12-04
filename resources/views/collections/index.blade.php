@@ -6,6 +6,9 @@
             <div class="text-center">
                 <h2 class="header-text">Laurie LaFrate Collections</h2>
             </div>
+            <div class="float-left">
+                <a class="btn btn-primary back-button" href="{{ url('/dashboard') }}" title="Home"> <i class="fas fa-home "></i> </a>
+            </div>
             <div class="float-right">
                 <a class="btn btn-success plus-button" href="{{ route('collections.create') }}" title="Create a collection"> <i class="fas fa-plus-circle"></i></a>
             </div>
