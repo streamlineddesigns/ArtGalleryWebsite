@@ -1,0 +1,78 @@
+body,html {
+    font-family: "SF Pro Display";
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/SF-Pro-Text-Medium.woff);
+    font-display: swap;
+}
+
+th {
+    color: #BC9143 !important;
+}
+
+textarea {
+    resize: none;
+}
+
+table {
+    border-radius: 25px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.15), 0 4px 20px 0 rgba(0,0,0,0.1);
+}
+
+.card-style {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.15), 0 4px 20px 0 rgba(0,0,0,0.1);
+    border-radius: 25px;
+}
+
+span.relative.z-0.inline-flex.shadow-sm.rounded-md {
+    box-shadow: none !important;
+}
+
+p.text-sm.text-gray-700.leading-5 {
+    font-size: 16px;
+}
+
+.pagination-buttons, span.cursor-default, a.relative.inline-flex.items-center.px-4.py-2.-ml-px.text-sm.font-medium, a.relative.inline-flex.items-center.px-2.py-2.-ml-px.text-sm.font-medium.text-gray-500.bg-white.border, a.relative.inline-flex.items-center.px-2.py-2.text-sm.font-medium.text-gray-500.bg-white.border{
+    border-radius: 25px;
+    margin: 5px;
+    padding: .5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    color: white;
+    background-color: #454d55 !important;
+}
+
+.gold-text {
+    color: #BC9143 !important;
+}
+
+.long-text {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.plus-button, .back-button {
+    min-height: 50px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.header-text {
+    color: #BC9143 !important;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.form-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    align-self: center;
+    width: 100%;
+}

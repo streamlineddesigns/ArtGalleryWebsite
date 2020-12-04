@@ -3,12 +3,11 @@
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Laravel 8 CRUD </h2>
+            <div class="text-center">
+                <h2 class="header-text">Laurie LaFrate Collections</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('collections.create') }}" title="Create a collection"> <i class="fas fa-plus-circle"></i>
-                    </a>
+            <div class="float-right">
+                <a class="btn btn-success plus-button" href="{{ route('collections.create') }}" title="Create a collection"> <i class="fas fa-plus-circle"></i></a>
             </div>
         </div>
     </div>
@@ -19,7 +18,7 @@
         </div>
     @endif
 
-    <table class="table table-bordered table-responsive-lg">
+    <table class="table table-striped table-dark table-bordered table-responsive">
         <tr>
             <th>id</th>
             <th>name</th>
@@ -30,13 +29,13 @@
         </tr>
         @foreach ($collections as $collection)
             <tr>
-                <td>{{ $collection->id }}</td>
+                <td class="gold-text">{{ $collection->id }}</td>
                 <td>{{ $collection->name }}</td>
-                <td>{{ $collection->description }}</td>
+                <td class="long-text">{{ $collection->description }}</td>
                 <td>{{ $collection->background_image_url }}</td>
                 <td>{{ $collection->name_color_id }}</td>
                 <td>
-                    <form action="{{ route('collections.destroy', $collection->id) }}" method="POST">
+                    <form action="{{ route('collections.destroy', $collection->id) }}" method="POST" class="form-buttons">
 
                         <a href="{{ route('collections.show', $collection->id) }}" title="show">
                             <i class="fas fa-eye text-success  fa-lg"></i>

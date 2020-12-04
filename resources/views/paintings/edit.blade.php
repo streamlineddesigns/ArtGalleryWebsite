@@ -3,11 +3,11 @@
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Edit Product</h2>
+            <div class="text-center">
+                <h2 class="header-text">Edit Painting</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('paintings.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
+            <div class="float-right">
+                <a class="btn btn-primary back-button" href="{{ route('paintings.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
             </div>
         </div>
     </div>
@@ -27,44 +27,44 @@
         @csrf
         @method('PUT')
 
-        <div class="row">
+        <div class="row card-style p-5 my-5">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>name:</strong>
-                    <input type="text" name="name" value="{{ $painting->name }}" class="form-control" placeholder="name">
+                    <strong>Name:</strong>
+                    <input type="text" name="name" value="{{ $painting->name }}" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>description:</strong>
-                    <textarea class="form-control" style="height:50px" name="description"
-                        placeholder="description">{{ $painting->description }}</textarea>
+                    <strong>Description:</strong>
+                    <textarea class="form-control" rows="5" name="description"
+                        placeholder="Description">{{ $painting->description }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>footer_text:</strong>
+                    <strong>Footer Text:</strong>
                     <textarea class="form-control" style="height:50px" name="footer_text"
-                        placeholder="footer_text">{{ $painting->footer_text }}</textarea>
+                        placeholder="Footer Text">{{ $painting->footer_text }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>price:</strong>
+                    <strong>Price:</strong>
                     <textarea class="form-control" style="height:50px" name="price"
-                        placeholder="footer_text">{{ $painting->price }}</textarea>
+                        placeholder="Price">{{ $painting->price }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>image_url:</strong>
+                    <strong>Image URL:</strong>
                     <input type="text" name="image_url" class="form-control" placeholder="{{ $painting->image_url }}"
                         value="{{ $painting->image_url }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>name_color_id:</strong>
+                    <strong>Name Color:</strong>
                     <select name="name_color_id" class="form-control">
                         @foreach ($colors as $key => $value)
                         <option value="{{$value->id}}" 
@@ -78,7 +78,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>button_color_id:</strong>
+                    <strong>Button Color:</strong>
                     <select name="button_color_id" class="form-control">
                         @foreach ($colors as $key => $value)
                         <option value="{{$value->id}}" 

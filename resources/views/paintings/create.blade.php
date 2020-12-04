@@ -3,11 +3,11 @@
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Add New Painting</h2>
+            <div class="text-center">
+                <h2 class="header-text">Add New Painting</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('paintings.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
+            <div class="float-right">
+                <a class="btn btn-primary back-button" href="{{ route('paintings.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
             </div>
         </div>
     </div>
@@ -25,10 +25,10 @@
     <form action="{{ route('paintings.store') }}" method="POST" >
         @csrf
 
-        <div class="row">
+        <div class="row card-style p-5 my-5">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>collection_id:</strong>
+                    <strong>Collection:</strong>
                     <select name="collection_id" class="form-control">
                         <option value="">Select Collection</option>
                         @foreach ($collections as $key => $value)
@@ -39,38 +39,38 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>name:</strong>
-                    <input type="text" name="name" class="form-control" placeholder="name">
+                    <strong>Name:</strong>
+                    <input type="text" name="name" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>description:</strong>
-                    <textarea class="form-control" style="height:50px" name="description"
-                        placeholder="description"></textarea>
+                    <strong>Description:</strong>
+                    <textarea class="form-control" rows="5" name="description"
+                        placeholder="Description"></textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>footer_text:</strong>
-                    <input type="text" name="footer_text" class="form-control" placeholder="footer_text">
+                    <strong>Footer Text:</strong>
+                    <input type="text" name="footer_text" class="form-control" placeholder="Footer Text">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>price:</strong>
-                    <input type="number" name="price" class="form-control" placeholder="price">
+                    <strong>Price:</strong>
+                    <input type="number" name="price" class="form-control" placeholder="Price">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>image_url:</strong>
-                    <input type="text" name="image_url" class="form-control" placeholder="image_url">
+                    <strong>Image URL:</strong>
+                    <input type="text" name="image_url" class="form-control" placeholder="Image URL">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>name_color_id:</strong>
+                    <strong>Name Color:</strong>
                     <select name="name_color_id" class="form-control">
                         <option value="">Select Color</option>
                         @foreach ($colors as $key => $value)
@@ -81,7 +81,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>button_color_id:</strong>
+                    <strong>Button Color:</strong>
                     <select name="button_color_id" class="form-control">
                         <option value="">Select Color</option>
                         @foreach ($colors as $key => $value)

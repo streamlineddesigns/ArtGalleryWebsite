@@ -3,11 +3,11 @@
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Add New Collection</h2>
+            <div class="text-center">
+                <h2 class="header-text">Add New Collection</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('collections.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
+            <div class="float-right">
+                <a class="btn btn-primary back-button" href="{{ route('collections.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
             </div>
         </div>
     </div>
@@ -25,29 +25,29 @@
     <form action="{{ route('collections.store') }}" method="POST" >
         @csrf
 
-        <div class="row">
+        <div class="row card-style p-5 my-5">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>name:</strong>
-                    <input type="text" name="name" class="form-control" placeholder="name">
+                    <strong>Name:</strong>
+                    <input type="text" name="name" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>description:</strong>
-                    <textarea class="form-control" style="height:50px" name="description"
-                        placeholder="description"></textarea>
+                    <strong>Description:</strong>
+                    <textarea class="form-control" rows="5" name="description"
+                        placeholder="Description"></textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>background_image_url:</strong>
-                    <input type="text" name="background_image_url" class="form-control" placeholder="background_image_url">
+                    <strong>Background Image URL:</strong>
+                    <input type="text" name="background_image_url" class="form-control" placeholder="Background Image URL">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>name_color_id:</strong>
+                    <strong>Name Color:</strong>
                     <select name="name_color_id" class="form-control">
                         <option value="">Select Color</option>
                         @foreach ($colors as $key => $value)
