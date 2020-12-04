@@ -3054,6 +3054,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -46195,11 +46202,18 @@ var render = function() {
                     "inertia-link",
                     { attrs: { href: _vm.route("dashboard") } },
                     [
-                      _c("jet-application-mark", {
-                        staticClass: "block h-9 w-auto"
+                      _c("img", {
+                        staticStyle: {
+                          "max-height": "50px",
+                          border: "1px solid #BC9143 !important",
+                          "border-radius": "50%",
+                          padding: "7px",
+                          "box-shadow":
+                            "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
+                        },
+                        attrs: { src: "/img/logo.png" }
                       })
-                    ],
-                    1
+                    ]
                   )
                 ],
                 1
@@ -47626,7 +47640,7 @@ var render = function() {
             { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
             [
               _vm._v(
-                "\n                Nothing to show here yet, but you can add new collections & paintings using the navigation links at the top.\n            "
+                "\n                Nothing to add here yet. You can use the navigation at the top to add new collections & paintings\n            "
               )
             ]
           )

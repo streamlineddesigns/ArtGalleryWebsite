@@ -9,7 +9,7 @@
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    <welcome />
+                    Nothing to add here yet. You can use the navigation at the top to add new collections & paintings
                 </div>
             </div>
         </div>

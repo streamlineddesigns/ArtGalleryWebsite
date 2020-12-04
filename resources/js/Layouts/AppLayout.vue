@@ -8,7 +8,14 @@
                         <!-- Logo -->
                         <div class="flex-shrink-0 flex items-center">
                             <inertia-link :href="route('dashboard')">
-                                <jet-application-mark class="block h-9 w-auto" />
+                                <img src="/img/logo.png" style="
+                                    max-height: 50px;
+                                    border: 1px solid #BC9143 !important;
+                                    border-radius: 50%;
+                                    padding: 7px;
+                                    box-shadow: 0 0 black;
+                                    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                                ">
                             </inertia-link>
                         </div>
 
