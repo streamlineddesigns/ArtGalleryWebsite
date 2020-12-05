@@ -53,15 +53,15 @@ hit `y` when prompted and `enter` afterwards when it tells you what filename it'
 
 ## Database Setup
 run `mysql -u root` to login to mysql
-run `create database ArtGalleryWebsite`
-run `CREATE USER 'ArtGalleryWebsite'@'localhost' IDENTIFIED BY 'NEWPASSWORDHERE';`
-run `grant all privileges on *.* to 'ArtGalleryWebsite'@'localhost';`
-run `flush privileges;`
-run `nano .env` and update database info and when you're done, `CTRL+X` out to exit and enter `y` when prompted
-run `php artisan migrate` to have the database schema created
-run `php artisan db:seed` to load the database with seed data.  There is a Color, and User seeder that will run
-run `cd /var/www/ArtGalleryWebsite`;
-run `mysql -u ArtGalleryWebsite -p ArtGalleryWebsite < ./database/migrations/ArtGalleryWebsite.sql -f` to populate the database with the rest of the data
+run `create database ArtGalleryWebsite`  
+run `CREATE USER 'ArtGalleryWebsite'@'localhost' IDENTIFIED BY 'NEWPASSWORDHERE';`  
+run `grant all privileges on *.* to 'ArtGalleryWebsite'@'localhost';`  
+run `flush privileges;`  
+run `nano .env` and update database info and when you're done, `CTRL+X` out to exit and enter `y` when prompted  
+run `php artisan migrate` to have the database schema created  
+run `php artisan db:seed` to load the database with seed data.  There is a Color, and User seeder that will run  
+run `cd /var/www/ArtGalleryWebsite`;  
+run `mysql -u ArtGalleryWebsite -p ArtGalleryWebsite < ./database/migrations/ArtGalleryWebsite.sql -f` to populate the database with the rest of the data  
 
 ## Host Setup
 run `sudo nano /etc/hosts`  
