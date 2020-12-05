@@ -25,16 +25,6 @@
                                 Dashboard
                             </jet-nav-link>
                         </div>
-                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                            <jet-nav-link :href="route('collections.index')">
-                                Collections
-                            </jet-nav-link>
-                        </div>
-                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                            <jet-nav-link :href="route('paintings.index')">
-                                Paintings
-                            </jet-nav-link>
-                        </div>
                     </div>
 
                     <!-- Settings Dropdown -->
