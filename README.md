@@ -21,6 +21,7 @@ then run `sudo apt-get update && sudo apt install php-xml php-curl` & run `compo
 run `npm install --only=prod`
 if not installed on server run `sudo apt install npm` and try again
 
+run `php artisan storage:link`  
 run `chmod -R 777 storage bootstrap/cache`  
 run `cp .env.example .env`  
 run `php artisan key:generate`  
