@@ -65,13 +65,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name Color:</strong>
-                    <input type="text" name="image_url" class="form-control hex-color-picker-input" placeholder="{{ $painting->name_color }}" value="{{ $painting->name_color }}" autocomplete="off" readonly>
+                    <input type="text" name="name_color" class="form-control hex-color-picker-input" placeholder="{{ $painting->name_color }}" value="{{ $painting->name_color }}" autocomplete="off" readonly>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Button Color:</strong>
-                    <input type="text" name="image_url" class="form-control hex-color-picker-input" placeholder="{{ $painting->button_color }}" value="{{ $painting->button_color }}" autocomplete="off" readonly>
+                    <input type="text" name="button_color" class="form-control hex-color-picker-input" placeholder="{{ $painting->button_color }}" value="{{ $painting->button_color }}" autocomplete="off" readonly>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

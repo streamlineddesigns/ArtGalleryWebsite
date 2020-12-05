@@ -14,7 +14,7 @@ class ColorController extends Controller
 
         if ($request->has('hex')) {
 
-            return $this->color_luminance($hex, 0.8);
+            return $this->color_luminance($hex, 0.9);
 
         } else {
 
