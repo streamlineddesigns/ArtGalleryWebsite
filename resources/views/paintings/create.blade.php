@@ -71,23 +71,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name Color:</strong>
-                    <select name="name_color_id" class="form-control">
-                        <option value="">Select Color</option>
-                        @foreach ($colors as $key => $value)
-                        <option value="{{$value->id}}">{{ $value->name }}</option>
-                        @endforeach    
-                    </select>
+                    <input type="text" name="name_color" class="form-control hex-color-picker-input" placeholder="Name Color" autocomplete="off" readonly>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Button Color:</strong>
-                    <select name="button_color_id" class="form-control">
-                        <option value="">Select Color</option>
-                        @foreach ($colors as $key => $value)
-                        <option value="{{$value->id}}">{{ $value->name }}</option>
-                        @endforeach    
-                    </select>
+                    <input type="text" name="button_color" class="form-control hex-color-picker-input" placeholder="Button Color" autocomplete="off" readonly>
                 </div>
             </div>
             <!--<div class="col-xs-12 col-sm-12 col-md-12">

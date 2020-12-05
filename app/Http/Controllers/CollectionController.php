@@ -44,7 +44,7 @@ class CollectionController extends Controller
             'name' => 'required',
             'description' => 'required',
             'background_image_url' => 'required',
-            'name_color_id' => 'required'
+            'name_color' => 'required'
         ]);
 
         Collection::create($request->all());
@@ -89,7 +89,7 @@ class CollectionController extends Controller
             'name' => 'required',
             'description' => 'required',
             'background_image_url' => 'required',
-            'name_color_id' => 'required'
+            'name_color' => 'required'
         ]);
 
         $collection->update($request->all());

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="{{url('vendor/bootstrap/css/bootstrap.min.css')}}">
     <!--Custom-->
     <link href="{{url('/css/tables.css')}}" rel="stylesheet">
+    <!--Color Picker CSS-->
+    <link rel="stylesheet" href="{{url('vendor/jquery-hex-colorpicker-master/css/jquery-hex-colorpicker.css')}}">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -27,6 +29,17 @@
     <div class="container py-5">
         @yield('content')
     </div>
+
+    <!--jQuery & Color Picker JS-->
+    <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url('vendor/jquery-hex-colorpicker-master/src/jquery-hex-colorpicker.min.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            $(".hex-color-picker-input").each(function() {
+                $(this).hexColorPicker();
+            });
+        });
+    </script>
 </body>
 
 </html>

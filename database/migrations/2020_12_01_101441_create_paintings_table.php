@@ -20,19 +20,9 @@ class CreatePaintingsTable extends Migration
             $table->text('footer_text');
             $table->bigInteger('price');
             $table->string('image_url');
-            $table->integer('name_color_id')->unsigned()->nullable();
-            $table->integer('button_color_id')->unsigned()->nullable();
+            $table->string('name_color');
+            $table->string('button_color');
             $table->timestamps();
-
-            $table->foreign('name_color_id')
-            ->references('id')
-            ->on('colors')
-            ->onDelete('cascade');
-
-            $table->foreign('button_color_id')
-            ->references('id')
-            ->on('colors')
-            ->onDelete('cascade');
         });
     }
 

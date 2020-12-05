@@ -27,8 +27,7 @@
         }
 
         .collection_name_color {
-            /*color: {{$collection->name_color_id}};*/
-            color: {{$colors->find($collection->name_color_id)->hex_value}};
+            color: {{$collection->name_color}}
         }
 
         .collection_paintings img {
@@ -96,11 +95,11 @@
                     <img class="img-fluid" src="{{url( $value->image_url)}}" alt="Painting">
                 </div>
                 <div class="col-lg-5 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
-                    <h2 class="row-header row-header-large text-transform-none" style="color: {{$colors->find($value->name_color_id)->hex_value}};">{{$value->name}}</h2>
+                    <h2 class="row-header row-header-large text-transform-none" style="{{$collection->name_color}}">{{$value->name}}</h2>
                     <p>
                         {{$value->description}}
                     </p>
-                    <a href="" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">I'm interested in this</a>
+                    <a href="" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$collection->button_color}};">I'm interested in this</a>
                 </div>
                 </div>
             </div>
@@ -113,11 +112,11 @@
                         <img class="img-fluid" src="{{url( $value->image_url)}}" alt="Painting">
                     </div>
                     <div class="order-lg-first col-lg-5 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
-                        <h2 class="row-header row-header-large text-transform-none" style="color: {{$colors->find($value->name_color_id)->hex_value}};">{{$value->name}}</h2>
+                        <h2 class="row-header row-header-large text-transform-none" style="color: {{$collection->name_color}};">{{$value->name}}</h2>
                         <p>
                             {{$value->description}}
                         </p>
-                        <a href="" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$colors->find($value->button_color_id)->hex_value}};">I'm interested in this</a>
+                        <a href="" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$collection->button_color}};">I'm interested in this</a>
                     </div>
                 </div>
             </div>

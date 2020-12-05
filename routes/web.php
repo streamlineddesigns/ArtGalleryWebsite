@@ -6,7 +6,7 @@ use App\Http\Controllers\CollectionController;
 use App\Http\Controllers\PaintingController;
 use App\Http\Controllers\ArtCollectionController;
 use App\Http\Controllers\IndexController;
-
+use App\Http\Controllers\ColorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +20,6 @@ use App\Http\Controllers\IndexController;
 */
 
 //used by public for browsing website
-
 Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/about', function () {
@@ -33,6 +32,7 @@ Route::get('/art/collections/{collection}', [ArtCollectionController::class, 'sh
 //used by admin for updating collections & paintings
 Route::resource('collections', CollectionController::class)->middleware('auth');
 Route::resource('paintings', PaintingController::class)->middleware('auth');
+Route::get('/color', [ColorController::class, 'index'])->middleware('auth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');

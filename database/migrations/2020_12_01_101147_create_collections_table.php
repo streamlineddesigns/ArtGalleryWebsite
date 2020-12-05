@@ -18,13 +18,8 @@ class CreateCollectionsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('background_image_url');
-            $table->integer('name_color_id')->unsigned()->nullable();
+            $table->string('name_color');
             $table->timestamps();
-
-            $table->foreign('name_color_id')
-            ->references('id')
-            ->on('colors')
-            ->onDelete('cascade');
         });
     }
 

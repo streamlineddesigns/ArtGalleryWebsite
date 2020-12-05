@@ -39,8 +39,8 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name Color ID:</strong>
-                {{ $collection->name_color_id }}
+                <strong>Name Color:</strong>
+                {{ $collection->name_color }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

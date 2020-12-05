@@ -14,8 +14,6 @@ class Painting extends Model
 
     protected $casts = [
         'price' => 'integer',
-        'name_color_id' => 'integer',
-        'button_color_id' => 'integer',
     ];
 
     protected $fillable = [
@@ -24,7 +22,7 @@ class Painting extends Model
         'footer_text',
         'price',
         'image_url',
-        'name_color_id',
-        'button_color_id'
+        'name_color',
+        'button_color'
     ];
 }

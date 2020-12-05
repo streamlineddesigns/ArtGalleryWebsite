@@ -27,7 +27,7 @@
             <th>Name</th>
             <th>Description</th>
             <th>Background Image URL</th>
-            <th>Name Color ID</th>
+            <th>Name Color</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($collections as $collection)
@@ -36,7 +36,7 @@
                 <td>{{ $collection->name }}</td>
                 <td class="long-text">{{ $collection->description }}</td>
                 <td>{{ $collection->background_image_url }}</td>
-                <td>{{ $collection->name_color_id }}</td>
+                <td>{{ $collection->name_color }}</td>
                 <td>
                     <form action="{{ route('collections.destroy', $collection->id) }}" method="POST" class="form-buttons">
 

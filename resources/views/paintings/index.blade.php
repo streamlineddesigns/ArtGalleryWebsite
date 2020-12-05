@@ -29,8 +29,8 @@
             <th>Footer Text</th>
             <th>Price</th>
             <th>Image URL</th>
-            <th>Name Color ID</th>
-            <th>Button Color ID</th>
+            <th>Name Color</th>
+            <th>Button Color</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($paintings as $painting)
@@ -41,8 +41,8 @@
                 <td>{{ $painting->footer_text }}</td>
                 <td>{{ $painting->price }}</td>
                 <td>{{ $painting->image_url }}</td>
-                <td>{{ $painting->name_color_id }}</td>
-                <td>{{ $painting->button_color_id }}</td>
+                <td>{{ $painting->name_color }}</td>
+                <td>{{ $painting->button_color }}</td>
                 <td>
                     <form action="{{ route('paintings.destroy', $painting->id) }}" method="POST" class="form-buttons">
 

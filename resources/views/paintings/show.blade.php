@@ -51,14 +51,14 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name Color ID:</strong>
-                {{ $painting->name_color_id }}
+                <strong>Name Color:</strong>
+                {{ $painting->name_color }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Button Color ID:</strong>
-                {{ $painting->button_color_id }}
+                <strong>Button Color:</strong>
+                {{ $painting->button_color }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

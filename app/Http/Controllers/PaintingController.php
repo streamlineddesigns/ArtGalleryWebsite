@@ -50,8 +50,8 @@ class PaintingController extends Controller
             'footer_text' => 'required',
             'price' => 'required',
             'image_url' => 'required',
-            'name_color_id' => 'required',
-            'button_color_id' => 'required'
+            'name_color' => 'required',
+            'button_color' => 'required'
         ]);
 
         $new_painting = Painting::create($request->all());
@@ -109,8 +109,8 @@ class PaintingController extends Controller
             'footer_text' => 'required',
             'price' => 'required',
             'image_url' => 'required',
-            'name_color_id' => 'required',
-            'button_color_id' => 'required'
+            'name_color' => 'required',
+            'button_color' => 'required'
         ]);
 
         $painting->update($request->all());

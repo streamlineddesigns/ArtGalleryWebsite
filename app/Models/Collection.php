@@ -12,14 +12,10 @@ class Collection extends Model
     protected $table = 'collections';
     public $timestamps = true;
 
-    protected $casts = [
-        'name_color_id' => 'integer'
-    ];
-
     protected $fillable = [
         'name',
         'description',
         'background_image_url',
-        'name_color_id',
+        'name_color',
     ];
 }

@@ -65,29 +65,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name Color:</strong>
-                    <select name="name_color_id" class="form-control">
-                        @foreach ($colors as $key => $value)
-                        <option value="{{$value->id}}" 
-                        @if ($value->id == $painting->name_color_id)
-                            selected="selected"
-                        @endif    
-                        >{{ $value->name }}</option>
-                        @endforeach 
-                    </select>
+                    <input type="text" name="image_url" class="form-control hex-color-picker-input" placeholder="{{ $painting->name_color }}" value="{{ $painting->name_color }}" autocomplete="off" readonly>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Button Color:</strong>
-                    <select name="button_color_id" class="form-control">
-                        @foreach ($colors as $key => $value)
-                        <option value="{{$value->id}}" 
-                        @if ($value->id == $painting->button_color_id)
-                            selected="selected"
-                        @endif    
-                        >{{ $value->name }}</option>
-                        @endforeach 
-                    </select>
+                    <input type="text" name="image_url" class="form-control hex-color-picker-input" placeholder="{{ $painting->button_color }}" value="{{ $painting->button_color }}" autocomplete="off" readonly>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
