@@ -65,6 +65,7 @@ class ImageController extends Controller
      */
     public function show($id, Request $request)
     {
+        return "<b>In Developmment Still</b>";
         if ($request->has('filename') && ($id == COLLECTION_FOLDER || $id == PAINTING_FOLDER)) {
 
             $filepath = $id . "/" . $request->filename;
