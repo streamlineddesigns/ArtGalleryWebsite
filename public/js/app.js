@@ -3368,6 +3368,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3428,6 +3452,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3455,6 +3500,25 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -47480,35 +47544,80 @@ var render = function() {
     },
     [
       _vm._v(" "),
-      _c("div", [
-        _c(
-          "div",
-          {
-            staticClass: "max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 text-center"
-          },
-          [
-            _c(
-              "form",
-              {
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    return _vm.submit(_vm.folder)
+      _c("div", { staticClass: "container py-5" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-12 margin-tb" }, [
+            _c("div", { staticClass: "text-center" }, [
+              _c("h2", { staticClass: "header-text" }, [
+                _vm._v("Upload " + _vm._s(_vm.folder) + " Images")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "float-left" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "btn btn-primary back-button",
+                  attrs: {
+                    href: _vm.route("images.index", _vm.folder),
+                    title: "Back"
                   }
-                }
-              },
-              [
-                _c("input", {
-                  ref: "image",
-                  attrs: { type: "file" },
-                  on: { change: _vm.onFileChange }
-                }),
-                _vm._v(" "),
-                _c("button", { attrs: { type: "submit" } }, [_vm._v("Submit")])
-              ]
-            )
-          ]
-        )
+                },
+                [_c("i", { staticClass: "fas fa-backward" })]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "div",
+            {
+              staticClass: "max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 text-center"
+            },
+            [
+              _c(
+                "form",
+                {
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      return _vm.submit(_vm.folder)
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "custom-file" }, [
+                    _c("input", {
+                      ref: "image",
+                      staticClass: "custom-file-input",
+                      attrs: { type: "file", required: "" },
+                      on: { change: _vm.onFileChange }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      {
+                        staticClass: "custom-file-label",
+                        attrs: { for: "validatedCustomFile" }
+                      },
+                      [_vm._v("Choose file...")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary my-5 float-right",
+                      attrs: { type: "submit" }
+                    },
+                    [_vm._v("Submit")]
+                  )
+                ]
+              )
+            ]
+          )
+        ])
       ])
     ]
   )
@@ -47559,35 +47668,72 @@ var render = function() {
     },
     [
       _vm._v(" "),
-      _c("div", [
-        _c(
-          "div",
-          {
-            staticClass: "max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 text-center"
-          },
-          _vm._l(_vm.files, function(file) {
-            return _c(
-              "jet-nav-link",
-              {
-                key: file,
-                attrs: {
-                  href: _vm.route("images.show", {
-                    foldername: _vm.folder,
-                    filename: file.split("/")[1]
+      _c("div", { staticClass: "container py-5" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-12 margin-tb" }, [
+            _c("div", { staticClass: "text-center" }, [
+              _c("h2", { staticClass: "header-text" }, [
+                _vm._v("View " + _vm._s(_vm.folder) + " Images")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "float-left" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "btn btn-primary back-button",
+                  attrs: { href: _vm.route("dashboard"), title: "Back" }
+                },
+                [_c("i", { staticClass: "fas fa-backward" })]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "float-right" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "btn btn-success plus-button",
+                  attrs: {
+                    href: _vm.route("images.create", _vm.folder),
+                    title: "Upload Image"
+                  }
+                },
+                [_c("i", { staticClass: "fas fa-plus-circle" })]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "div",
+            {
+              staticClass: "max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 text-center"
+            },
+            _vm._l(_vm.files, function(file) {
+              return _c(
+                "jet-nav-link",
+                {
+                  key: file,
+                  attrs: {
+                    href: _vm.route("images.show", {
+                      foldername: _vm.folder,
+                      filename: file.split("/")[1]
+                    })
+                  }
+                },
+                [
+                  _c("img", {
+                    key: _vm.folder,
+                    staticStyle: { "max-width": "200px", height: "auto" },
+                    attrs: { src: "../../uploads/" + file, alt: file }
                   })
-                }
-              },
-              [
-                _c("img", {
-                  key: _vm.folder,
-                  staticStyle: { "max-width": "200px", height: "auto" },
-                  attrs: { src: "../../uploads/" + file, alt: file }
-                })
-              ]
-            )
-          }),
-          1
-        )
+                ]
+              )
+            }),
+            1
+          )
+        ])
       ])
     ]
   )
@@ -47638,26 +47784,57 @@ var render = function() {
     },
     [
       _vm._v(" "),
-      _c("div", [
-        _c(
-          "div",
-          {
-            staticClass: "max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 text-center"
-          },
-          [
-            _c(
-              "jet-nav-link",
-              { attrs: { href: _vm.route("images.index", _vm.folder) } },
-              [_vm._v("\n                Go Back\n            ")]
-            ),
+      _c("div", { staticClass: "container py-5" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-12 margin-tb" }, [
+            _c("div", { staticClass: "text-center" }, [
+              _c("h2", { staticClass: "header-text" }, [
+                _vm._v("View " + _vm._s(_vm.folder) + " Images")
+              ])
+            ]),
             _vm._v(" "),
-            _c("img", {
-              staticStyle: { "max-width": "100%", height: "auto" },
-              attrs: { src: _vm.img_src, alt: _vm.img_src }
-            })
-          ],
-          1
-        )
+            _c("div", { staticClass: "float-left" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "btn btn-primary back-button",
+                  attrs: {
+                    href: _vm.route("images.index", _vm.folder),
+                    title: "Back"
+                  }
+                },
+                [_c("i", { staticClass: "fas fa-backward" })]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "float-right" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "btn btn-danger plus-button",
+                  attrs: { href: "", title: "Upload Image" }
+                },
+                [_c("i", { staticClass: "fas fa-trash fa-lg trash-button" })]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "div",
+            {
+              staticClass:
+                "d-flex justify-content-center align-items-center text-center"
+            },
+            [
+              _c("img", {
+                staticStyle: { "max-width": "100%", height: "auto" },
+                attrs: { src: _vm.img_src, alt: _vm.img_src }
+              })
+            ]
+          )
+        ])
       ])
     ]
   )

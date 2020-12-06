@@ -71,6 +71,7 @@ p.text-sm.text-gray-700.leading-5 {
     color: #BC9143 !important;
     font-size: 25px;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .form-buttons {

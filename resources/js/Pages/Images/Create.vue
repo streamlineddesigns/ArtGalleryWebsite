@@ -6,14 +6,38 @@
             </h2>
         </template>
 
-        <div>
-            <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 text-center">
-                <form @submit.prevent="submit(folder)">
-                    <input ref="image" type="file" @change="onFileChange">
-                    <button type="submit">Submit</button>
-                </form>
+        <!-- Container -->
+        <div class="container py-5">
+
+            <div class="row">
+                <div class="col-lg-12 margin-tb">
+                    <div class="text-center">
+                        <h2 class="header-text">Upload {{folder}} Images</h2>
+                    </div>
+                    <div class="float-left">
+                        <a class="btn btn-primary back-button" :href="route('images.index', folder)" title="Back"> <i class="fas fa-backward"></i> </a>
+                    </div>
+                </div>
             </div>
+
+            <div>
+                <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 text-center">
+                    <form @submit.prevent="submit(folder)">
+                        <!-- <input ref="image" type="file" @change="onFileChange"> -->
+
+                        <div class="custom-file">
+                            <input ref="image" type="file" @change="onFileChange" class="custom-file-input" required>
+                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary my-5 float-right">Submit</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
+        <!-- /Container -->
+
     </app-layout>
 </template>
 

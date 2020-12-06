@@ -6,14 +6,33 @@
             </h2>
         </template>
 
-        <div>
-            <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 text-center">
-                <jet-nav-link :href="route('images.index', folder)">
-                    Go Back
-                </jet-nav-link>
-                <img :src="img_src" :alt="img_src" style="max-width: 100%;height:auto;">
+
+        <!-- Container -->
+        <div class="container py-5">
+
+            <div class="row">
+                <div class="col-lg-12 margin-tb">
+                    <div class="text-center">
+                        <h2 class="header-text">View {{folder}} Images</h2>
+                    </div>
+                    <div class="float-left">
+                        <a class="btn btn-primary back-button" :href="route('images.index', folder)" title="Back"> <i class="fas fa-backward"></i> </a>
+                    </div>
+                    <div class="float-right">
+                        <a class="btn btn-danger plus-button" href="" title="Upload Image"> <i class="fas fa-trash fa-lg trash-button"></i></a>
+                    </div>
+                </div>
             </div>
+
+            <div>
+                <div class="d-flex justify-content-center align-items-center text-center">
+                    <img :src="img_src" :alt="img_src" style="max-width: 100%;height:auto;">
+                </div>
+            </div>
+
         </div>
+        <!-- /Container -->
+
     </app-layout>
 </template>
 
