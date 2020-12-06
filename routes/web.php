@@ -8,7 +8,7 @@ use App\Http\Controllers\ArtCollectionController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ColorController;
 use App\Http\Controllers\ImageController;
-
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,20 +22,21 @@ use App\Http\Controllers\ImageController;
 */
 
 //used by public for browsing website
-Route::get('/', [IndexController::class, 'index']);
+Route::get('/', [IndexController::class, 'index'])->name('homepage');
 
 Route::get('about', function () {
     return view('about');
 });
 
-Route::get('/art/collections/{collection}', [ArtCollectionController::class, 'show']);
+Route::post('contact', [ContactController::class, 'index'])->name('contact');
 
+Route::get('/art/collections/{collection}', [ArtCollectionController::class, 'show']);
 
 //used by admin for updating collections & paintings
 Route::resource('collections', CollectionController::class)->middleware('auth');
 Route::resource('paintings', PaintingController::class)->middleware('auth');
 
-
+//Used by admin for uploading images
 Route::get('images/{foldername}', [ImageController::class, 'index'])->name('images.index')->middleware('auth');//index of all images
 Route::get('images/{foldername}/upload/', [ImageController::class, 'create'])->name('images.create')->middleware('auth');//show create form for images
 Route::get('images/{foldername}/{filename}', [ImageController::class, 'show'])->name('images.show')->middleware('auth');//show specific images by foldername/filename

@@ -12,28 +12,47 @@
           settings—crafted with love, from a studio on New York’s Upper East Side.
         </p>
 
-        <form>
+        @if ($message = Session::get('success'))
+          <div class="alert alert-success">
+              <p>{{ $message }}</p>
+          </div>
+        @endif
+
+        @if ($errors->any())
+          <div class="alert alert-danger">
+              <strong>Whoops!</strong> There were some problems with your input.<br><br>
+              <ul>
+                  @foreach ($errors->all() as $error)
+                      <li>{{ $error }}</li>
+                  @endforeach
+              </ul>
+          </div>
+        @endif
+
+        <form action="{{ route('contact') }}" method="POST">
+          @csrf
+
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputName1">Name</label>
-              <input type="email" class="form-control" id="inputName1" placeholder="Name">
+              <input type="text" class="form-control" name="name" placeholder="Name" required>
             </div>
             <div class="form-group col-md-6">
               <label for="inputEmail1">Email</label>
-              <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+              <input type="email" class="form-control" name="email" placeholder="Email" required>
             </div>
             <div class="form-group col-md-6">
               <label for="inputPhone1">Phone</label>
-              <input type="email" class="form-control" id="inputPhone1" placeholder="Phone">
+              <input type="tel" class="form-control" name="phone" placeholder="Phone">
             </div>
             <div class="form-group col-md-6">
               <label for="inputInstagram1">Instagram</label>
-              <input type="email" class="form-control" id="inputInstagram1" placeholder="Instagram">
+              <input type="text" class="form-control" name="instagram" placeholder="Instagram">
             </div>
           </div>
           <div class="form-group">
             <label for="inputTextarea1">Message</label>
-            <textarea class="form-control" id="inputTextarea1" rows="5" placeholder="Message"></textarea>
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
           </div>
           <button type="submit" class="btn btn-custom">Submit</button>
         </form>

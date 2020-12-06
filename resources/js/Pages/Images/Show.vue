@@ -19,7 +19,7 @@
                         <a class="btn btn-primary back-button" :href="route('images.index', folder)" title="Back"> <i class="fas fa-backward"></i> </a>
                     </div>
                     <div class="float-right">
-                        <a class="btn btn-danger plus-button" href="" title="Upload Image"> <i class="fas fa-trash fa-lg trash-button"></i></a>
+                        <a class="btn btn-danger plus-button" href="" title="Delete Image"> <i class="fas fa-trash fa-lg trash-button"></i></a>
                     </div>
                 </div>
             </div>

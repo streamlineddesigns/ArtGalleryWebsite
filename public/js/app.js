@@ -47812,7 +47812,7 @@ var render = function() {
                 "a",
                 {
                   staticClass: "btn btn-danger plus-button",
-                  attrs: { href: "", title: "Upload Image" }
+                  attrs: { href: "", title: "Delete Image" }
                 },
                 [_c("i", { staticClass: "fas fa-trash fa-lg trash-button" })]
               )
