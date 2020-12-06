@@ -99,7 +99,7 @@
                     <p>
                         {{$value->description}}
                     </p>
-                    <a href="" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};">I'm interested in this</a>
+                    <a href="#contact" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};">I'm interested in this</a>
                 </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                         <p>
                             {{$value->description}}
                         </p>
-                        <a href="" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};">I'm interested in this</a>
+                        <a href="#contact" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};">I'm interested in this</a>
                     </div>
                 </div>
             </div>
