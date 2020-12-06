@@ -8,8 +8,8 @@
 
         <div>
             <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 text-center">
-                <jet-nav-link v-for="file in files" v-bind:key="file" :href="route('images.show', 2)">
-                    <img :src="`uploads/${file}`" :alt="file" style="max-width: 200px;height:auto;">
+                <jet-nav-link v-for="file in files" v-bind:key="file" :href="route('images.show', {foldername:folder, filename: file.split('/')[1] })">
+                    <img :src="`../../uploads/${file}`" :alt="file" v-bind:key="folder" style="max-width: 200px;height:auto;">
                 </jet-nav-link>
             </div>
         </div>
@@ -24,7 +24,7 @@
         props: {
             sessions:Object,
             files:Array,
-            folder:'uploads',
+            folder:String,
         },
 
         components: {

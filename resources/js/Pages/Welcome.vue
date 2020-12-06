@@ -24,7 +24,7 @@
                         Create, View, & Upload Collection Images
                     </div>
 
-                    <jet-nav-link :href="route('images.index', { folder: 'collections'})">
+                    <jet-nav-link :href="route('images.index', 'collections')">
                         <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
                                 <div>View Collection Images</div>
 
@@ -72,7 +72,7 @@
                         Create, View, & Upload Painting Images
                     </div>
 
-                    <jet-nav-link :href="route('images.index', { folder: 'paintings'})">
+                    <jet-nav-link :href="route('images.index', 'paintings')">
                         <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
                                 <div>View Painting Images</div>
 

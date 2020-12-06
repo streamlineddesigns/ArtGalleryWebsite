@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
+use App;
 
 define("COLLECTION_FOLDER", "collections");
 define("PAINTING_FOLDER", "paintings");
@@ -16,16 +17,15 @@ class ImageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index($foldername, Request $request)
     {
-        $folder = $request->folder;
+        if (isset($foldername) && ($foldername == COLLECTION_FOLDER || $foldername == PAINTING_FOLDER)) {
 
-        if ($request->has('folder') && ($folder == COLLECTION_FOLDER || $folder == PAINTING_FOLDER)) {
-
-            $files = Storage::disk("uploads")->allFiles($folder);
+            $files = Storage::disk("uploads")->allFiles($foldername);
 
             return Inertia::render('Images/Index', [
                 'files' => $files,
+                'folder' => $foldername,
             ]);
 
         } else {
@@ -40,9 +40,11 @@ class ImageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($foldername, Request $request)
     {
-        //
+        return Inertia::render('Images/Create', [
+            'folder' => $foldername,
+        ]);
     }
 
     /**
@@ -51,9 +53,13 @@ class ImageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store($foldername, Request $request) 
     {
-        //
+        //dd($request->file('logo'));
+
+        //$path = $request->file('logo')->store("upload/$foldername");
+        $path = Storage::putFile("public/uploads/$foldername", $request->file('logo'));
+        echo $path;
     }
 
     /**
@@ -63,18 +69,25 @@ class ImageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function show($id, Request $request)
+    public function show($foldername, string $filename, Request $request)
     {
-        return "<b>In Developmment Still</b>";
-        if ($request->has('filename') && ($id == COLLECTION_FOLDER || $id == PAINTING_FOLDER)) {
+        if (isset($filename) && ($foldername == COLLECTION_FOLDER || $foldername == PAINTING_FOLDER)) {
 
-            $filepath = $id . "/" . $request->filename;
+            $filepath = $foldername . "/" . $filename;
             $exists = Storage::disk("uploads")->exists($filepath);
 
             if ($exists) {
-                echo "<img src='../uploads/$filepath' alt='$filepath image'>";
+
+                $qualified_img_src= "../../uploads/$filepath";
+                //echo "<img src='../../uploads/$filepath' alt='$filepath image'>";
+
+                return Inertia::render('Images/Show', [
+                    'img_src' => $qualified_img_src,
+                    'folder' => $foldername,
+                ]);
+
             } else {
-                return "don't got em";
+                App::abort(404);
             }
 
         } else {

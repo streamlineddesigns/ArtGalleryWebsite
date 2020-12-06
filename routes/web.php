@@ -34,7 +34,21 @@ Route::get('/art/collections/{collection}', [ArtCollectionController::class, 'sh
 //used by admin for updating collections & paintings
 Route::resource('collections', CollectionController::class)->middleware('auth');
 Route::resource('paintings', PaintingController::class)->middleware('auth');
-Route::resource('images', ImageController::class)->middleware('auth');
+
+
+Route::get('images/{foldername}', [ImageController::class, 'index'])->name('images.index')->middleware('auth');//index of all images
+Route::get('images/{foldername}/upload/', [ImageController::class, 'create'])->name('images.create')->middleware('auth');//show create form for images
+Route::get('images/{foldername}/{filename}', [ImageController::class, 'show'])->name('images.show')->middleware('auth');//show specific images by foldername/filename
+Route::post('images/{foldername}', [ImageController::class, 'store'])->name('images.store')->middleware('auth');//store image to disk
+
+
+//Route::resource('images', ImageController::class);
+
+
+//Route::resource('images', ImageController::class)->middleware('auth');
+//Route::resource('images/{image}', ImageController::class)->middleware('auth');
+
+
 Route::get('color', [ColorController::class, 'index'])->middleware('auth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
