@@ -70,19 +70,22 @@
   <div class="container custom-container">
     <div class="row">
       <div class="col-lg-5 px-0">
-        <img class="img-fluid" src="img/Pics of Laurie/200525_A_IMG_9834.jpg" alt="Laurie sitting in a chair">
+        <img class="img-fluid" src="img/Pics of Laurie/Laurie White Chair.jpg" alt="Laurie sitting in a chair">
       </div>
       <div class="order-lg-first col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
-        <h2 class="row-header row-header-large text-transform-none blue-branding-color">One can’t <i>not</i> feel emotions looking at Laurie’s art.</h2>
+        <h2 class="row-header row-header-large text-transform-none blue-branding-color">Laurie's Art Reflects Many Emotions</h2>
         <p>
-            Regardless of where she is in her life, Laurie is her happiest and most productive in her studio—where she paints for hours on end. Some of her favorite artists growing up that still inspire her today include, Cy Twombly, Hans Hoffman, and Joan Michell.
+          Despite the ups and downs in her personal life – the constant in her life is the love for the arts. It makes Laurie the happiest, and she loves being creative and productive in her studio. Her inspirations include Cy Twombly, Hans Hoffman, and Joan Michell, amongst many others.
         </p>
+ 
         <p>
-            Lauire is a romantic and tends to wear her heart on her canvases. Her bold color palettes and mixed media designs are often inspired by changing landscapes in her urban environment. Laurie spends hours every day in her studio creating contemporary statement pieces that are designed to enhance the decor of residential and commercial settings.
+          Her bold selection of colors and mixed media designs are often inspired by the beautiful landscapes that change with the season in her urban environment – her romantic life as well. Laurie spends hours every day in her studio, creating contemporary statement pieces that are designed to enhance the decor of residential and commercial settings.
         </p>
+
         <p>
-            Laurie creates for everyone and does not follow a specific brand or style. She borrows from her real time experiences and moods, and lends her passion for the process of creation to all of her pieces. While there are noticeable themes and threads throughout her body of work—especially among her collections—her works are an authentic, ever-evolving experimentation of what feels bright and right in the moment, with no specific outcome in mind. 
+          Laurie does not differentiate and creates for everyone and anyone. She does not follow anything, but inspiration, and every Painting of her's depicts a different theme. There is nothing planned for her outcome of creativity. When she starts to paint – the only thing she relies on is her instincts! She works endless hours in her studio to follow her passion that leads to creating different masterpieces of her talent. It is the moment when she starts working that she creates whatever feels right. Laurie says: "I just allow the paintbrush to flow across the canvas organically, and I paint what I experience."
         </p>
+
         <a href="#contact" role="button" class="btn btn-custom">Connect With Laurie</a>
       </div>
     </div>

@@ -43,7 +43,7 @@
 
   <p class="footer-company-about">
     <span>About the company</span>
-    Original works of art designed for sophisticated residential & commercial settings—crafted with love, from a studio on New York’s Upper East Side.
+    Extraordinary artwork by Laurie LaFrate for extraordinary residential and commercial spaces – crafted with love, from a studio on New York's Upper East Side.
   </p>
 
   <div class="footer-icons">

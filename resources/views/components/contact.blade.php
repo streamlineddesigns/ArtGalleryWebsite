@@ -8,8 +8,7 @@
         <span class="row-header row-header-small">Contact Us</span>
         <h2 class="row-header row-header-large">Laurie LaFrate <span>Art Gallery</span></h2>
         <p>
-          Original works of art designed for sophisticated residential & commercial
-          settings—crafted with love, from a studio on New York’s Upper East Side.
+          Extraordinary artwork by Laurie LaFrate for extraordinary residential and commercial spaces – crafted with love, from a studio on New York's Upper East Side.
         </p>
 
         @if ($message = Session::get('success'))
