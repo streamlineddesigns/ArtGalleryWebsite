@@ -27,7 +27,7 @@
 
   <div>
     <i class="fa fa-phone"></i>
-    <p><a href="tel:12312998676" class="telephone">+1 (231) 299-8676</a></p>
+    <p><a href="tel:19175583501" class="telephone">+1 917-558-3501</a></p>
   </div>
 
   <div>
