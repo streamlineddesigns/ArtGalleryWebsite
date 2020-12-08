@@ -46,18 +46,18 @@
                 <td>
                     <form action="{{ route('paintings.destroy', $painting->id) }}" method="POST" class="form-buttons">
 
-                        <a href="{{ route('paintings.show', $painting->id) }}" title="show">
+                        <a href="{{ route('paintings.show', $painting->id) }}" title="show" class="chubby-buttons">
                             <i class="fas fa-eye text-success  fa-lg"></i>
                         </a>
 
-                        <a href="{{ route('paintings.edit', $painting->id) }}">
+                        <a href="{{ route('paintings.edit', $painting->id) }}" class="chubby-buttons">
                             <i class="fas fa-edit  fa-lg"></i>
                         </a>
 
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" title="delete" style="border: none; background-color:transparent;">
+                        <button type="submit" title="delete" class="chubby-buttons">
                             <i class="fas fa-trash fa-lg text-danger"></i>
 
                         </button>

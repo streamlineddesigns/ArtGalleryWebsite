@@ -18,7 +18,7 @@ class UserTableSeeder extends Seeder
         User::create([
                         'name' => 'Pierce Prange',
                         'email' => 'streamline.our.designs@gmail.com',
-                        'password' => Hash::make('password'),
+                        'password' => Hash::make('password123'),
                     ]);
     }
 }

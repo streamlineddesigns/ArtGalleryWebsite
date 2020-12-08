@@ -42,23 +42,22 @@
       <div class="col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
         <span class="row-header row-header-small">Meet the artist</span>
         <h2 class="row-header row-header-large">About Laurie LaFrate</h2>
+
         <p>
-          Laurie LaFrate grew up in a small town called Elbridge in Upstate New York. Laurie knew she had a proclivity for the arts at an early age and took art classes in high school. Laurie's artwork is enriched by her use of vivid colors and layering techniques. Wherever creativity attracted her, she went along. Painting in intriguing designs, patterns, interior designing, everything was at the tips of her fingers. Laurie LaFrate moved to NYC after gaining her graduation from Ithaca College. There she launched a recruitment advertising agency which opened new doors for unleashing her hidden talents. In this role, Laurie merged with her art department to upgrade the look and feel of potential clients' print ads for recruiting talent. Her degree in Business and Marketing, her sales experience, and her creative soul was key to the success of her business. It later merged with an ad agency on Madison Avenue. She was successful in whichever field she chose. 
+          Laurie LaFrate grew up in a small town called Elbridge in Upstate New York. Laurie knew she had a proclivity for the arts at an early age and took art classes in high school. Laurie's artwork is enriched by her use of vivid colors and layering techniques. Wherever creativity attracted her, she went along. Painting in intriguing designs, patterns, interior designing, everything was at the tips of her fingers. 
+        </p>
+        <p>
+          Laurie LaFrate moved to NYC after gaining her graduation from Ithaca College. There she launched a recruitment advertising agency which opened new doors for unleashing her hidden talents. In this role, Laurie merged with her art department to upgrade the look and feel of potential clients' print ads for recruiting talent. Her degree in Business and Marketing, her sales experience, and her creative soul was key to the success of her business. It later merged with an ad agency on Madison Avenue. She was successful in whichever field she chose. 
         </p>
         <p>
           After some time, Laurie started working in corporate America. Even so, the talented side of her continued to explore in arts on the other hand while she continued to paint and create wonders for friends and family. She knew it from the beginning; this was not going to be a short-lived obsession and will continue to grow with her.
         </p>
-        <p>
-          Laurie has also come across many influential artists like James Little, who supervised her studies at The New York Art Students League for abstract Painting. Furthermore, she acquired the skill of color selection and painting with intent. 
-        </p>
-        <p>
-          Laurie says: "Painting has always taken a special place in my life. I paint with my heart and get inspired by the surrounding world." Her preferred artistic movement is abstract impressionism and informal art. 
-        </p>
+        
         <a href="/about" role="button" class="btn btn-custom">More About Laurie</a>
         <div>
           <a href="https://www.facebook.com" class="custom-link"><img class="img-fluid" src="img/social-media-icons-download 17.png" alt="social link for Facebook"></a>
-          <a href="https://www.instagram.com" class="custom-link"><img class="img-fluid" src="img/social-media-icons-download 18.png" alt="social link for Instagram"></a>
-          <a href="https://www.linkedin.com" class="custom-link"><img class="img-fluid" src="img/social-media-icons-download 19.png" alt="social link for LinkedIn"></a>
+          <a href="https://www.instagram.com/laurielafrateart/" class="custom-link"><img class="img-fluid" src="img/social-media-icons-download 18.png" alt="social link for Instagram"></a>
+          <a href="https://www.linkedin.com/in/laurie-lafrate-1b55338" class="custom-link"><img class="img-fluid" src="img/social-media-icons-download 19.png" alt="social link for LinkedIn"></a>
           <a href="https://www.youtube.com" class="custom-link"><img class="img-fluid" src="img/social-media-icons-download 20.png" alt="social link for YouTube"></a>
         </div>
       </div>

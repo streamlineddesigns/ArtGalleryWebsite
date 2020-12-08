@@ -58,8 +58,8 @@
 
         <div>
           <a href="https://www.facebook.com" class="custom-link"><img class="img-fluid" src="{{url('img/social-media-icons-download 17.png')}}" alt="social link for Facebook"></a>
-          <a href="https://www.instagram.com" class="custom-link"><img class="img-fluid" src="{{url('img/social-media-icons-download 18.png')}}" alt="social link for Instagram"></a>
-          <a href="https://www.linkedin.com" class="custom-link"><img class="img-fluid" src="{{url('img/social-media-icons-download 19.png')}}" alt="social link for LinkedIn"></a>
+          <a href="https://www.instagram.com/laurielafrateart/" class="custom-link"><img class="img-fluid" src="{{url('img/social-media-icons-download 18.png')}}" alt="social link for Instagram"></a>
+          <a href="https://www.linkedin.com/in/laurie-lafrate-1b55338" class="custom-link"><img class="img-fluid" src="{{url('img/social-media-icons-download 19.png')}}" alt="social link for LinkedIn"></a>
           <a href="https://www.youtube.com" class="custom-link"><img class="img-fluid" src="{{url('img/social-media-icons-download 20.png')}}" alt="social link for YouTube"></a>
         </div>
       </div>

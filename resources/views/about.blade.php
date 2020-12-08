@@ -42,23 +42,11 @@
         <span class="row-header row-header-small">Meet the artist</span>
         <h2 class="row-header row-header-large text-transform-none black-branding-color">About Laurie LaFrate</h2>
         <p>
-          Laurie LaFrate is an abstract painter whose passion for painting with bold colors, fresh designs and unique patterns—along with an interest in decorating interiors—came to her at an early age. Growing up in a small town called Elbridge in Upstate New York, Laurie took art classes in high school and continued privately both locally and in NYC. 
+          Ultimately, Laurie became a bona fide, abstract artist, and there was no looking back. She was finally discovered by a private art dealer in 2018 who encouraged her to display her work with the people who had an eye for her talent. She now does what she loves every day and is very thankful for it. She spends hours in her studio, creating paintings from the heart—expressing her emotions as a visual language. Along with being aesthetically pleasing, Laurie's work is visceral and spontaneous. 
         </p>
 
         <p>
-          After graduating from Ithaca College,  Laurie moved to NYC, where she launched a recruitment advertising agency. In this role, Laurie collaborated with her art department to upgrade the look and feel of new clients’ print ads— used for recruiting talent.
-        </p>
-
-        <p>
-          Later on, Laurie found herself working in corporate America where—despite her day to day, she privately painted one-of-a kind paintings for family and friends. 
-        </p>
-
-        <p>
-          While attending The New York Art Student’s League for abstract painting, where she studied under the direction of influential abstract artist James Little, Lauire learned the art of color selection and how to paint with intent. 
-        </p>
-
-        <p>
-          Laurie gets to persue her greatest passion everyday—spending hours in her studio, creating paintings from the heart. Laurie expresses her emotions as a visual language. Her powerful, mixed-media paintings are designed to enhance or transform the decor and mood of any residential or commercial space.
+          Now, Laurie is in the best phase of her life. She spends as many hours in her studio as she likes, creating, exploring, and experimenting with colors. She is blessed to have a choice of indulging in her passion and creating magic with her talented hands. She likes to believe that she expresses her emotions through her artwork. Her paintings have a powerful stance - her mixed media paintings are designed to enhance residential or commercial spaces' decor and mood. She believes that the world can be a stressful place to live in, and through her paintings, she can lighten up the surroundings and make people's life peaceful and calm. Merely looking at art can bring us joy and happiness every day. 
         </p>
         <a href="/#artgallery" role="button"class="btn btn-custom">Check Out Gallery</a>
       </div>
