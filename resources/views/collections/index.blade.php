@@ -7,7 +7,7 @@
                 <h2 class="header-text">Laurie LaFrate Collections</h2>
             </div>
             <div class="float-left">
-                <a class="btn btn-primary back-button" href="{{ url('/dashboard') }}" title="Home"> <i class="fas fa-home "></i> </a>
+                <a class="btn btn-primary back-button" href="{{ url('/dashboard') }}" title="Home"> <i class="fas fa-backward "></i> </a>
             </div>
             <div class="float-right">
                 <a class="btn btn-success plus-button" href="{{ route('collections.create') }}" title="Create a collection"> <i class="fas fa-plus-circle"></i></a>
@@ -40,18 +40,18 @@
                 <td>
                     <form action="{{ route('collections.destroy', $collection->id) }}" method="POST" class="form-buttons">
 
-                        <a href="{{ route('collections.show', $collection->id) }}" title="show">
+                        <a href="{{ route('collections.show', $collection->id) }}" title="show" class="chubby-buttons">
                             <i class="fas fa-eye text-success  fa-lg"></i>
                         </a>
 
-                        <a href="{{ route('collections.edit', $collection->id) }}">
+                        <a href="{{ route('collections.edit', $collection->id) }}" class="chubby-buttons">
                             <i class="fas fa-edit  fa-lg"></i>
                         </a>
 
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" title="delete" style="border: none; background-color:transparent;">
+                        <button type="submit" title="delete" class="chubby-buttons">
                             <i class="fas fa-trash fa-lg text-danger"></i>
 
                         </button>

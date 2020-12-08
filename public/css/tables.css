@@ -83,3 +83,24 @@ p.text-sm.text-gray-700.leading-5 {
     align-self: center;
     width: 100%;
 }
+
+.chubby-buttons {
+    background-color: white;
+    border-radius: 25%;
+    padding: 15px;
+}  
+
+.normalalized-table-text {
+    font-weight: 500;
+    font-family: Nunito, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Small & Medium devices (desktops, 992px and DOWN)  */
+@media (max-width: 992px) {
+
+    .container {
+        min-width: 100%;
+    }
+
+}
+
