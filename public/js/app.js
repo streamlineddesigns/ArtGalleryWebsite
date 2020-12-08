@@ -46732,14 +46732,7 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _c("header", { staticClass: "bg-white shadow" }, [
-        _c(
-          "div",
-          { staticClass: "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8" },
-          [_vm._t("header")],
-          2
-        )
-      ]),
+      _vm._m(0),
       _vm._v(" "),
       _c("main", [_vm._t("default")], 2),
       _vm._v(" "),
@@ -46748,7 +46741,20 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("header", { staticClass: "bg-white shadow" }, [
+      _c(
+        "div",
+        { staticClass: "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8" },
+        [_c("span", [_vm._v("Welcome")])]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -47825,7 +47831,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "d-flex justify-content-center align-items-center text-center"
+                "d-flex justify-content-center align-items-center text-center max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 text-center"
             },
             [
               _c("img", {

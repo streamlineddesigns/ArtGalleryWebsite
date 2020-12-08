@@ -51,7 +51,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name Color:</strong>
-                    <input type="text" name="name_color" class="form-control hex-color-picker-input" placeholder="{{ $collection->name_color }}" value="{{ $collection->name_color }}" autocomplete="off" readonly>
+                    <input type="text" name="name_color" class="form-control hex-color-picker-input" placeholder="{{ $collection->name_color }}" value="{{ $collection->name_color }}" autocomplete="off" readonly  style="background-color:{{ $collection->name_color }};">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

@@ -43,23 +43,16 @@
         <span class="row-header row-header-small">Meet the artist</span>
         <h2 class="row-header row-header-large">About Laurie LaFrate</h2>
         <p>
-          Laurie LaFrate is an abstract painter whose passion for painting with bold colors, fresh designs and unique patterns—along with an interest in decorating interiors—came to her at an early age. Growing up in a small town called Elbridge in Upstate New York, Laurie took art classes in high school and continued privately both locally and in NYC. 
+          Laurie LaFrate grew up in a small town called Elbridge in Upstate New York. Laurie knew she had a proclivity for the arts at an early age and took art classes in high school. Laurie's artwork is enriched by her use of vivid colors and layering techniques. Wherever creativity attracted her, she went along. Painting in intriguing designs, patterns, interior designing, everything was at the tips of her fingers. Laurie LaFrate moved to NYC after gaining her graduation from Ithaca College. There she launched a recruitment advertising agency which opened new doors for unleashing her hidden talents. In this role, Laurie merged with her art department to upgrade the look and feel of potential clients' print ads for recruiting talent. Her degree in Business and Marketing, her sales experience, and her creative soul was key to the success of her business. It later merged with an ad agency on Madison Avenue. She was successful in whichever field she chose. 
         </p>
-
         <p>
-          After graduating from Ithaca College,  Laurie moved to NYC, where she launched a recruitment advertising agency. In this role, Laurie collaborated with her art department to upgrade the look and feel of new clients’ print ads— used for recruiting talent.
+          After some time, Laurie started working in corporate America. Even so, the talented side of her continued to explore in arts on the other hand while she continued to paint and create wonders for friends and family. She knew it from the beginning; this was not going to be a short-lived obsession and will continue to grow with her.
         </p>
-
         <p>
-          Later on, Laurie found herself working in corporate America where—despite her day to day, she privately painted one-of-a kind paintings for family and friends. 
+          Laurie has also come across many influential artists like James Little, who supervised her studies at The New York Art Students League for abstract Painting. Furthermore, she acquired the skill of color selection and painting with intent. 
         </p>
-
         <p>
-          While attending The New York Art Student’s League for abstract painting, where she studied under the direction of influential abstract artist James Little, Lauire learned the art of color selection and how to paint with intent. 
-        </p>
-
-        <p>
-          Laurie gets to persue her greatest passion everyday—spending hours in her studio, creating paintings from the heart. Laurie expresses her emotions as a visual language. Her powerful, mixed-media paintings are designed to enhance or transform the decor and mood of any residential or commercial space.
+          Laurie says: "Painting has always taken a special place in my life. I paint with my heart and get inspired by the surrounding world." Her preferred artistic movement is abstract impressionism and informal art. 
         </p>
         <a href="/about" role="button" class="btn btn-custom">More About Laurie</a>
         <div>
