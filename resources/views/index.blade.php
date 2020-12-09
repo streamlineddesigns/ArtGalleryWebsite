@@ -2,6 +2,7 @@
 <html class="no-js" lang="">
 
 <head>
+  <x-analytics/>
   <meta charset="utf-8">
   <title>Laurie LaFrate Art</title>
   <meta name="description" content="Extraordinary artwork by Laurie LaFrate for extraordinary residential and commercial spaces – crafted with love, from a studio on New York's Upper East Side.">

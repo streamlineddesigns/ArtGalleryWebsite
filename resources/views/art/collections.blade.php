@@ -3,6 +3,7 @@
 <html class="no-js" lang="">
 
 <head>
+  <x-analytics/>
   <meta charset="utf-8">
   <title>Laurie LaFrate Art Gallery</title>
   <meta name="description" content="">
