@@ -621,6 +621,10 @@ textarea {
   .hero-image-about {
     background-image: url("../img/Pics of Laurie/200811_IMG_0015 2_MOBILE.jpg");
   }
+
+  .painting-footer-text {
+    position: initial;
+  }
 }
 
 /* Large devices (desktops, 992px and up)  */
