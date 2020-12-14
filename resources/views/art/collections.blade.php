@@ -100,10 +100,10 @@
                         <p>
                             {{$value->description}}
                         </p>
-                        <a href="#contact" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};">I'm interested in this</a>
-                        <div class="painting-footer-text">
+                        <div class="painting-footer-text  mb-5">
                             {{$value->footer_text}}
                         </div>
+                        <a href="#contact" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};">I'm interested in this</a>
                     </div>
                 </div>
             </div>
@@ -120,10 +120,10 @@
                         <p>
                             {{$value->description}}
                         </p>
-                        <a href="#contact" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};">I'm interested in this</a>
-                        <div class="painting-footer-text">
+                        <div class="painting-footer-text mb-5">
                             {{$value->footer_text}}
                         </div>
+                        <a href="#contact" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};">I'm interested in this</a>
                     </div>
                 </div>
             </div>

@@ -571,7 +571,6 @@ textarea {
 }
 
 .painting-footer-text {
-  position: absolute;
   bottom: 50px;
   font-family: "SF Pro Display";
 }
@@ -645,6 +644,10 @@ textarea {
 
   .painting-footer-text {
     position: initial;
+  }
+
+  .btn-custom {
+    font-size: 16px !important;
   }
 }
 

@@ -47,7 +47,7 @@
         </p>
 
         <p>
-          Now, Laurie is in the best phase of her life. She spends as many hours in her studio as she likes, creating, exploring, and experimenting with colors. She is blessed to have a choice of indulging in her passion and creating magic with her talented hands. She likes to believe that she expresses her emotions through her artwork. Her paintings have a powerful stance - her mixed media paintings are designed to enhance residential or commercial spaces' decor and mood. She believes that the world can be a stressful place to live in, and through her paintings, she can lighten up the surroundings and make people's life peaceful and calm. Merely looking at art can bring us joy and happiness every day. 
+          Now, Laurie is in the best phase of her life. She is blessed to have a choice of indulging in her passion and creating magic with her talented hands. She likes to believe that she expresses her emotions through her artwork. Her paintings have a powerful stance - her mixed media paintings are designed to enhance residential or commercial spaces' decor and mood. She believes that the world can be a stressful place to live in, and through her paintings, she can lighten up the surroundings and make people's life peaceful and calm. Merely looking at art can bring us joy and happiness every day. 
         </p>
         <a href="/#artgallery" role="button"class="btn btn-custom">Check Out Gallery</a>
       </div>
@@ -68,11 +68,11 @@
         </p>
  
         <p>
-          Her bold selection of colors and mixed media designs are often inspired by the beautiful landscapes that change with the season in her urban environment – her romantic life as well. Laurie spends hours every day in her studio, creating contemporary statement pieces that are designed to enhance the decor of residential and commercial settings.
+          Her bold selection of colors and mixed media designs are often inspired by the beautiful landscapes that change with the season in her urban environment – her romantic life as well. Laurie enjoys creating contemporary statement pieces that are designed to enhance the decor of residential and commercial settings.
         </p>
 
         <p>
-          Laurie does not differentiate and creates for everyone and anyone. She does not follow anything, but inspiration, and every Painting of her's depicts a different theme. There is nothing planned for her outcome of creativity. When she starts to paint – the only thing she relies on is her instincts! She works endless hours in her studio to follow her passion that leads to creating different masterpieces of her talent. It is the moment when she starts working that she creates whatever feels right. Laurie says: "I just allow the paintbrush to flow across the canvas organically, and I paint what I experience."
+          Laurie does not differentiate and creates for everyone and anyone. She does not follow anything, but inspiration, and every Painting of her's depicts a different theme. There is nothing planned for her outcome of creativity. When she starts to paint – the only thing she relies on is her instincts! It is the moment when she starts working that she creates whatever feels right. Laurie says: "I just allow the paintbrush to flow across the canvas organically, and I paint what I experience."
         </p>
 
         <a href="#contact" role="button" class="btn btn-custom">Connect With Laurie</a>
