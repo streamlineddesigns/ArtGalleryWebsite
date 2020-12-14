@@ -6,16 +6,17 @@ use App\Models\Collection;
   <nav class="navbar fixed-top navbar-dark navbar-frosted-glass position-absolute navbar-expand-lg custom-navbar">
     <a class="navbar-brand custom-navbar-brand" href="/">
       <img class="img-fluid img-logo" src="{{url('img/logo.png')}}" alt="logo">
-      <span>Laurie LaFrate</span>
-      <span>Art Gallery</span>
+      <span class="hidden-on-mobile">Laurie LaFrate</span>
+      <span class="hidden-on-mobile">Art Gallery</span>
     </a>
+    <a class="hidden-on-desktop no-underline-link" href="/"><span class="laurie-font">Laurie LaFrate</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <hr>
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarTogglerDemo01">
           <a class="nav-link" href="{{url('/#artgallery')}}">Art Gallery</a>
         </li>
         <li class="nav-item dropdown">
@@ -31,7 +32,7 @@ use App\Models\Collection;
         <li class="nav-item">
           <a class="nav-link" href="{{url('about')}}">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarTogglerDemo01">
           <a class="nav-link" href="{{url('#contact')}}">Contact</a>
         </li>
       </ul>

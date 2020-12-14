@@ -68,6 +68,9 @@
 
   <!--Carosel Section-->
   <div class="container custom-container" id="artgallery">
+    <hr class="hidden-on-desktop">
+    <h6 class="row-header row-header-small text-center hidden-on-desktop">Laurie LaFrate</h6>
+    <h2 class="row-header row-header-large text-center hidden-on-desktop">Art Gallery</h2>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         {{$icp = 0}}
