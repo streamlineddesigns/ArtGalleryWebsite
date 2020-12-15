@@ -29,12 +29,15 @@
 
   <!--Hero Section-->
   <div class="hero-image hero-image-about">
-    
+    <div class="cta-container">
+        <p class="cta-text">Learn More!</p>
+        <a href="#hero-cta-button-target" class="hero-cta-button"><img src="{{url('img/social/chevron.png')}}" class="img-fluid" alt="downward arrow"></a>
+      </div>
   </div>
   <!--/Hero Section-->
 
   <!-- About 1 -->
-  <div class="container custom-container">
+  <div class="container custom-container" id="hero-cta-button-target">
     <div class="row">
       <div class="col-lg-5 px-0">
         <img class="img-fluid hidden-on-mobile" src="img/Pics of Laurie/200730_IMG_0040.jpg" alt="Laurie sitting in a chair">
@@ -96,6 +99,7 @@
   <x-footer/>
 
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="{{url('js/main.js')}}"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 

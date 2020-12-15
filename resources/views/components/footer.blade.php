@@ -45,12 +45,10 @@
   </p>
 
   <div class="footer-icons">
-
-    <a href="https://www.facebook.com/people/Laurie-LaFrate-Barr/100008250428968" class="custom-link"><img class="img-fluid" src="{{url('img/social-media-icons-download 17.png')}}" alt="social link for Facebook"></a>
-    <a href="https://www.instagram.com/laurielafrateart/" class="custom-link"><img class="img-fluid" src="{{url('img/social-media-icons-download 18.png')}}" alt="social link for Instagram"></a>
-    <a href="https://www.linkedin.com/in/laurie-lafrate-1b55338" class="custom-link"><img class="img-fluid" src="{{url('img/social-media-icons-download 19.png')}}" alt="social link for LinkedIn"></a>
-    <a href="https://www.youtube.com" class="custom-link"><img class="img-fluid" src="{{url('img/social-media-icons-download 20.png')}}" alt="social link for YouTube"></a>
-
+    <a href="https://www.facebook.com/people/Laurie-LaFrate-Barr/100008250428968" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/facebook-logo.png')}}" alt="social link for Facebook"></a>
+    <a href="https://www.instagram.com/laurielafrateart/" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/instagram.png')}}" alt="social link for Instagram"></a>
+    <a href="https://www.linkedin.com/in/laurie-lafrate-1b55338" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/linkedin.png')}}" alt="social link for LinkedIn"></a>
+    <a href="https://www.youtube.com" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/youtube.png')}}" alt="social link for YouTube"></a>
   </div>
 
 </div>

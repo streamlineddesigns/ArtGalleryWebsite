@@ -30,12 +30,15 @@
 
   <!--Hero Section-->
   <div class="hero-image">
-    
+    <div class="cta-container">
+      <p class="cta-text">Learn More!</p>
+      <a href="#hero-cta-button-target" class="hero-cta-button"><img src="{{url('img/social/chevron.png')}}" class="img-fluid" alt="downward arrow"></a>
+    </div>
   </div>
   <!--/Hero Section-->
 
   <!-- About -->
-  <div class="container custom-container">
+  <div class="container custom-container" id="hero-cta-button-target">
     <div class="row">
       <div class="col-lg-5 px-0">
         <img class="img-fluid hidden-on-mobile" src="img/Pics of Laurie/200730_IMG_0082.jpg" alt="Laurie sitting in a chair">
@@ -56,10 +59,10 @@
         
         <a href="/about" role="button" class="btn btn-custom">More About Laurie</a>
         <div>
-          <a href="https://www.facebook.com/people/Laurie-LaFrate-Barr/100008250428968" class="custom-link"><img class="img-fluid" src="img/social-media-icons-download 17.png" alt="social link for Facebook"></a>
-          <a href="https://www.instagram.com/laurielafrateart/" class="custom-link"><img class="img-fluid" src="img/social-media-icons-download 18.png" alt="social link for Instagram"></a>
-          <a href="https://www.linkedin.com/in/laurie-lafrate-1b55338" class="custom-link"><img class="img-fluid" src="img/social-media-icons-download 19.png" alt="social link for LinkedIn"></a>
-          <a href="https://www.youtube.com" class="custom-link"><img class="img-fluid" src="img/social-media-icons-download 20.png" alt="social link for YouTube"></a>
+          <a href="https://www.facebook.com/people/Laurie-LaFrate-Barr/100008250428968" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/facebook-logo.png')}}" alt="social link for Facebook"></a>
+          <a href="https://www.instagram.com/laurielafrateart/" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/instagram.png')}}" alt="social link for Instagram"></a>
+          <a href="https://www.linkedin.com/in/laurie-lafrate-1b55338" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/linkedin.png')}}" alt="social link for LinkedIn"></a>
+          <a href="https://www.youtube.com" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/youtube.png')}}" alt="social link for YouTube"></a>
         </div>
       </div>
     </div>
@@ -98,6 +101,7 @@
   <x-footer/>
 
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="{{url('js/main.js')}}"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 

@@ -489,7 +489,7 @@ label {
   background-image: none;
 }
 
-.btn-custom:hover, .btn-custom:active, .btn-custom:focus {
+.btn-custom:hover, .btn-custom:active, .btn-custom:focus, .custom-social-btn:hover, .custom-social-btn:active, .custom-social-btn:focus {
   border: none !important;
   outline: none !important;
   background: #FFDEA2;
@@ -573,6 +573,48 @@ textarea {
 .painting-footer-text {
   bottom: 50px;
   font-family: "SF Pro Display";
+}
+
+.custom-social-btn {
+  border-radius: 25px !important;
+  background: #BC9143;
+  background-image: -webkit-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -moz-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -ms-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -o-linear-gradient(top, #BC9143, #FFDEA2);
+  background-image: -webkit-gradient(to bottom, #BC9143, #FFDEA2);
+  width: 48px !important;
+  height: 48px !important;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-social-btn img {
+  height: 21px;
+  width: 21px;
+}
+
+.cta-container {
+  width: 500px;
+  max-width: 100%;
+  height: 100;
+  position: absolute;
+  bottom: 50px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 2rem;
+  color: white !important;
+  font-weight: 800;
+  text-align: center;
+  padding: 0px 15px 0px 15px !important;
+  font-family: "SF Pro Display";
+  text-shadow: 1.5px 1.5px #615E5E;
 }
 
 /* Small devices (landscape phones, 576px and up)  */
@@ -673,6 +715,10 @@ textarea {
   .hidden-on-desktop {
     display: none;
     visibility: hidden;
+  }
+
+  .cta-container {
+    bottom: 125px;
   }
 }
 
