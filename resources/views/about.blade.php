@@ -31,13 +31,13 @@
   <div class="hero-image hero-image-about">
     <div class="cta-container">
         <p class="cta-text">Learn More!</p>
-        <a href="#hero-cta-button-target" class="hero-cta-button"><img src="{{url('img/social/chevron.png')}}" class="img-fluid" alt="downward arrow"></a>
+        <a href="#about-section" class="hero-cta-button chevron-arrow"><img src="{{url('img/social/chevron.png')}}" class="img-fluid" alt="downward arrow"></a>
       </div>
   </div>
   <!--/Hero Section-->
 
   <!-- About 1 -->
-  <div class="container custom-container" id="hero-cta-button-target">
+  <div class="container custom-container" id="about-section">
     <div class="row">
       <div class="col-lg-5 px-0">
         <img class="img-fluid hidden-on-mobile" src="img/Pics of Laurie/200730_IMG_0040.jpg" alt="Laurie sitting in a chair">

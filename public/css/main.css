@@ -394,15 +394,16 @@ textarea {
 }
 
 .hero-image {
-  background-position: center;
+  background-position: center !important;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN.jpg");
+  background-size: cover !important;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN.jpg");
   height: 100vh;
+  -webkit-background-size: cover !important;
 }
 
 .hero-image-about {
-  background-image: url("../img/Pics of Laurie/200811_IMG_0015 2.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url("../img/Pics of Laurie/200811_IMG_0015 2.jpg");
 }
 
 .custom-dropdown-toggle::after {
@@ -498,6 +499,11 @@ label {
   background-image: -ms-linear-gradient(top, #FFDEA2, #BC9143) !important;
   background-image: -o-linear-gradient(top, #FFDEA2, #BC9143) !important;
   background-image: -webkit-gradient(to bottom, #FFDEA2, #BC9143) !important;
+}
+
+.chevron-arrow img {
+  max-height: 60px;
+  max-width: 60px;
 }
 
 .dropdown-item-custom {
@@ -614,7 +620,7 @@ textarea {
   text-align: center;
   padding: 0px 15px 0px 15px !important;
   font-family: "SF Pro Display";
-  text-shadow: 1.5px 1.5px #615E5E;
+  text-shadow: 1px 1px #615E5E;
 }
 
 /* Small devices (landscape phones, 576px and up)  */
@@ -677,11 +683,11 @@ textarea {
   }
 
   .hero-image {
-    background-image: url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN_MOBILE.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN_MOBILE.jpg");
   }
 
   .hero-image-about {
-    background-image: url("../img/Pics of Laurie/200811_IMG_0015 2_MOBILE.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url("../img/Pics of Laurie/200811_IMG_0015 2_MOBILE.jpg");
   }
 
   .painting-footer-text {
@@ -715,10 +721,6 @@ textarea {
   .hidden-on-desktop {
     display: none;
     visibility: hidden;
-  }
-
-  .cta-container {
-    bottom: 125px;
   }
 }
 
