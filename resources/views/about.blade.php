@@ -21,6 +21,14 @@
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 
   <meta name="theme-color" content="#fafafa">
+  <style>
+      /* Large Devices */
+        @media (min-width: 992px) {
+            .custom-navbar a.nav-link, .custom-navbar-brand span {
+                color: white !important;
+            }
+        }
+  </style>
 </head>
 
 <body>
