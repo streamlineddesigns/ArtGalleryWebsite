@@ -5,15 +5,10 @@ html {
   line-height: 1.4;
 }
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+html, body {
+  
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
 
 hr {
   display: block;
@@ -397,7 +392,7 @@ textarea {
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover !important;
-  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN.jpg");
   height: 100vh;
   -webkit-background-size: cover !important;
 }
@@ -683,7 +678,7 @@ textarea {
   }
 
   .hero-image {
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN_MOBILE.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url("../img/Pics of Laurie/200811_IMG_0180_NO_CHAN_MOBILE.jpg");
   }
 
   .hero-image-about {
@@ -719,7 +714,7 @@ textarea {
   }
 
   .hidden-on-desktop {
-    display: none;
+    display: none !important;
     visibility: hidden;
   }
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en-US">
 
 <head>
   <x-analytics/>
@@ -72,7 +72,7 @@
   <!--Carosel Section-->
   <div class="container custom-container" id="artgallery">
     <hr class="hidden-on-desktop">
-    <h6 class="row-header row-header-small text-center hidden-on-desktop">Laurie LaFrate</h6>
+    <span class="row-header row-header-small text-center hidden-on-desktop" style='font-size: 1rem; display: block;'>Laurie LaFrate</span>
     <h2 class="row-header row-header-large text-center hidden-on-desktop">Art Gallery</h2>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -85,11 +85,11 @@
         @endforeach
       </div>
       <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
-        <button class="btn-custom custom-carosel-button ml-3"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+        <button class="btn-custom custom-carosel-button ml-3" aria-label="Previous Image Button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
         <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
-        <button class="btn-custom custom-carosel-button mr-3"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+        <button class="btn-custom custom-carosel-button mr-3" aria-label="Next Image Button"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
         <span class="sr-only">Next</span>
       </a>
     </div>
