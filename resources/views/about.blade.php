@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en-US">
 
 <head>
   <x-analytics/>
   <meta charset="utf-8">
   <title>Laurie LaFrate Art Gallery</title>
-  <meta name="description" content="">
+  <meta name="description" content="Extraordinary artwork by Laurie LaFrate for extraordinary residential and commercial spaces – crafted with love, from a studio on New York's Upper East Side.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">

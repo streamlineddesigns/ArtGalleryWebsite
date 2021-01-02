@@ -480,11 +480,6 @@ label {
   background-image: -webkit-gradient(to bottom, #BC9143, #FFDEA2);
 }
 
-.btn-custom-white-mod {
-  color: white !important;
-  background-image: none;
-}
-
 .btn-custom:hover, .btn-custom:active, .btn-custom:focus, .custom-social-btn:hover, .custom-social-btn:active, .custom-social-btn:focus {
   border: none !important;
   outline: none !important;
@@ -495,6 +490,19 @@ label {
   background-image: -o-linear-gradient(top, #FFDEA2, #BC9143) !important;
   background-image: -webkit-gradient(to bottom, #FFDEA2, #BC9143) !important;
 }
+
+.btn-custom-white-mod {
+  color: white !important;
+  background-image: none;
+}
+
+.btn-custom-white-mod:hover, .btn-custom-white-mod:active, .btn-custom-white-mod:focus {
+  color:#615E5E !important;
+  background: white !important;
+  background-image: none;
+  border: 2px solid #615E5E !important;
+}
+
 
 .chevron-arrow img {
   max-height: 60px;

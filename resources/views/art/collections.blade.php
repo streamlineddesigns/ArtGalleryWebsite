@@ -1,12 +1,12 @@
 <!--{{ $collection->id }} -->
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en-US">
 
 <head>
   <x-analytics/>
   <meta charset="utf-8">
   <title>Laurie LaFrate Art Gallery</title>
-  <meta name="description" content="">
+  <meta name="description" content="Extraordinary artwork by Laurie LaFrate for extraordinary residential and commercial spaces – crafted with love, from a studio on New York's Upper East Side.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -103,7 +103,7 @@
                         <div class="painting-footer-text  mb-5">
                             {{$value->footer_text}}
                         </div>
-                        <a href="#contact" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};">I'm interested in this</a>
+                        <a href="#contact" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}}; border: 3px solid {{$value->button_color}} !important;">I'm interested in this</a>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                         <div class="painting-footer-text mb-5">
                             {{$value->footer_text}}
                         </div>
-                        <a href="#contact" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};">I'm interested in this</a>
+                        <a href="#contact" role="button"class="btn btn-custom btn-custom-white-mod" style="background-color: {{$value->button_color}};  border: 3px solid {{$value->button_color}} !important;">I'm interested in this</a>
                     </div>
                 </div>
             </div>
