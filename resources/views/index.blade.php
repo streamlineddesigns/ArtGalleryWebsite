@@ -4,11 +4,11 @@
 <head>
   <x-analytics/>
   <meta charset="utf-8">
-  <title>Laurie LaFrate Art</title>
+  <title>Laurie LaFrate</title>
   <meta name="description" content="Extraordinary artwork by Laurie LaFrate for extraordinary residential and commercial spaces – crafted with love, from a studio on New York's Upper East Side.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="Laurie LaFrate Art Gallery">
+  <meta property="og:title" content="Laurie LaFrate">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
@@ -45,7 +45,7 @@
       </div>
       <div class="col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
         <span class="row-header row-header-small">Meet the artist</span>
-        <h2 class="row-header row-header-large">About Laurie LaFrate</h2>
+        <h2 class="row-header row-header-large">Laurie LaFrate</h2>
 
         <p>
           Laurie LaFrate grew up in a small town called Elbridge in Upstate New York. Laurie knew she had a proclivity for the arts at an early age and took art classes in high school. Laurie's artwork is enriched by her use of vivid colors and layering techniques. Wherever creativity attracted her, she went along. Painting in intriguing designs, patterns, interior designing, everything was at the tips of her fingers. 

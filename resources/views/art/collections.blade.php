@@ -5,14 +5,15 @@
 <head>
   <x-analytics/>
   <meta charset="utf-8">
-  <title>Laurie LaFrate Art Gallery</title>
-  <meta name="description" content="Extraordinary artwork by Laurie LaFrate for extraordinary residential and commercial spaces – crafted with love, from a studio on New York's Upper East Side.">
+  <title>{{$collection->name}}</title>
+  <meta name="description" content="{{$collection->description}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
+  <meta property="og:title" content="Laurie LaFrate Art - {{$collection->name}}">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
+  <meta property="og:author" content="Streamlined Designs">
 
   <link rel="manifest" href="{{url('site.webmanifest')}}">
   <link rel="apple-touch-icon" href="{{url('icon.png')}}">
