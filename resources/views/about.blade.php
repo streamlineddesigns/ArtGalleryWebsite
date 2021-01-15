@@ -53,7 +53,7 @@
       </div>
       <div class="col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
         <span class="row-header row-header-small">Meet the artist</span>
-        <h2 class="row-header row-header-large text-transform-none black-branding-color">About Laurie LaFrate</h2>
+        <h1 class="row-header row-header-large text-transform-none black-branding-color">About Laurie LaFrate</h1>
         <p>
           Ultimately, Laurie became a bona fide, abstract artist, and there was no looking back. She was finally discovered by a private art dealer in 2018 who encouraged her to display her work with the people who had an eye for her talent. She now does what she loves every day and is very thankful for it. She spends hours in her studio, creating paintings from the heart—expressing her emotions as a visual language. Along with being aesthetically pleasing, Laurie's work is visceral and spontaneous. 
         </p>

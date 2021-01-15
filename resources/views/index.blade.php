@@ -45,7 +45,7 @@
       </div>
       <div class="col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
         <span class="row-header row-header-small">Meet the artist</span>
-        <h2 class="row-header row-header-large">Laurie LaFrate</h2>
+        <h1 class="row-header row-header-large">Laurie LaFrate</h1>
 
         <p>
           Laurie LaFrate grew up in a small town called Elbridge in Upstate New York. Laurie knew she had a proclivity for the arts at an early age and took art classes in high school. Laurie's artwork is enriched by her use of vivid colors and layering techniques. Wherever creativity attracted her, she went along. Painting in intriguing designs, patterns, interior designing, everything was at the tips of her fingers. 
