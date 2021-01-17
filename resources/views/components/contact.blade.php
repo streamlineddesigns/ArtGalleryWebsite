@@ -57,10 +57,10 @@
         </form>
 
         <div>
-          <a href="https://www.facebook.com/people/Laurie-LaFrate-Barr/100008250428968" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/facebook-logo.png')}}" alt="social link for Facebook"></a>
+          <a href="https://www.facebook.com/Laurie-LaFrate-Art-105989084775499" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/facebook-logo.png')}}" alt="social link for Facebook"></a>
           <a href="https://www.instagram.com/laurielafrateart/" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/instagram.png')}}" alt="social link for Instagram"></a>
-          <a href="https://www.linkedin.com/in/laurie-lafrate-1b55338" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/linkedin.png')}}" alt="social link for LinkedIn"></a>
-          <a href="https://www.youtube.com" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/youtube.png')}}" alt="social link for YouTube"></a>
+          <a href="https://www.linkedin.com/in/laurie-lafrate-barr-9b523515a/" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/linkedin.png')}}" alt="social link for LinkedIn"></a>
+          <a href="https://api.whatsapp.com/send?phone=19175583501" class="custom-social-btn"><img class="img-fluid" src="{{url('img/social/whatsapp.png')}}" alt="social link for Whatsapp"></a>
         </div>
       </div>
     </div>
