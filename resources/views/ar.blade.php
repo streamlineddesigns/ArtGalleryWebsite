@@ -40,7 +40,7 @@
             <a-entity
                 gltf-model='models/scene.gltf'
                 scale="5 5 5"
-                position="100 -100 0"
+                position="65 0 -75"
                 >
             </a-entity>
         </a-nft>
