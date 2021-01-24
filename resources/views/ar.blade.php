@@ -40,7 +40,7 @@
             <a-entity
                 gltf-model='models/scene.gltf'
                 scale="5 5 5"
-                position="200 400 0"
+                position="100 -100 0"
                 >
             </a-entity>
         </a-nft>
@@ -49,9 +49,9 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
+        /*$(document).ready(function() {
             $("a-entity").first().attr("position").x = screen.width / 2;
             $("a-entity").first().attr("position").y = screen.height / 2;
-        });
+        });*/
     </script>
 </body>
