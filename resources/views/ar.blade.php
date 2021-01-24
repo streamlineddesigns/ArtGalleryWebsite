@@ -40,8 +40,8 @@
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
             <a-entity
                 gltf-model='models/scene.gltf'
-                scale="5 5 5"
-                position="100 100 0"
+                scale="20 20 20"
+                position="0 0 0"
                 >
             </a-entity>
         </a-nft>
