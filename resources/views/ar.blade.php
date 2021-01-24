@@ -48,4 +48,10 @@
     </a-scene>
 
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("a-entity").first().attr("position").x = screen.width / 2;
+            $("a-entity").first().attr("position").x = screen.height / 2;
+        });
+    </script>
 </body>
