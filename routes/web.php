@@ -27,6 +27,10 @@ Route::get('about', function () {
     return view('about');
 });
 
+Route::get('ar', function () {
+    return view('ar');
+});
+
 Route::post('contact', [ContactController::class, 'index'])->name('contact');
 
 Route::get('/art/collections/{collection}', [ArtCollectionController::class, 'show']);
