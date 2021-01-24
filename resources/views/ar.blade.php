@@ -1,5 +1,4 @@
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-
 <style>
   .arjs-loader {
     height: 100%;
@@ -41,10 +40,12 @@
             <a-entity
                 gltf-model='models/scene.gltf'
                 scale="5 5 5"
-                position="0 100 0"
+                position="200 400 0"
                 >
             </a-entity>
         </a-nft>
 		<a-entity camera></a-entity>
     </a-scene>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
 </body>
