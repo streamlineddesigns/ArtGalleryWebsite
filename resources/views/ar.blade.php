@@ -51,7 +51,7 @@
     <script>
         $(document).ready(function() {
             $("a-entity").first().attr("position").x = screen.width / 2;
-            $("a-entity").first().attr("position").x = screen.height / 2;
+            $("a-entity").first().attr("position").y = screen.height / 2;
         });
     </script>
 </body>
