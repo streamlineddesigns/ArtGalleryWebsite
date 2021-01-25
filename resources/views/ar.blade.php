@@ -37,8 +37,14 @@
     z-index: 100000000;
   }
 
-  #input-form label {
+  #input-form div label {
     color: white;
+  }
+
+  #input-form div input {
+    height: 35px;
+    width: 200px;
+    font-size: 22px;
   }
 </style>
 
