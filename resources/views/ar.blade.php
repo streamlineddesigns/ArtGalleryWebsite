@@ -28,7 +28,7 @@
   <div class="arjs-loader">
     <div>Loading, please wait...</div>
   </div>
-    <img src="img/Pieces as JPEGS/16-min.jpg" alt="abstract art" style="display: none;">
+    <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art" style="display: none;">
     <a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
@@ -51,9 +51,11 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script>
-        /*$(document).ready(function() {
-            $("a-entity").first().attr("position").x = screen.width / 2;
-            $("a-entity").first().attr("position").y = screen.height / 2;
-        });*/
+        $(document).ready(function() {
+            var imgHeight = $("#img-dimensions").height;
+            var imgWidth = $("#img-dimensions").width;
+            $("a-entity").first().attr("position").x = (screen.width / 2) - (imgWidth / 2);;
+            $("a-entity").first().attr("position").z = (screen.height / 2) - (imgHeight / 2);
+        });
     </script>
 </body>
