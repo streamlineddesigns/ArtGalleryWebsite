@@ -28,6 +28,7 @@
   <div class="arjs-loader">
     <div>Loading, please wait...</div>
   </div>
+    <img src="img/Pieces as JPEGS/16-min.jpg" alt="abstract art" style="display: none;">
     <a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
