@@ -59,11 +59,11 @@
     <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art">
     <form id="input-form">
         <div>
-          <label for="widthinput">X</label>
+          <label for="widthinput">X Position</label>
           <input type="text" name="widthinput" id="widthinput">
         </div>
         <div>
-          <label for="heightinput">Y</label>
+          <label for="heightinput">Y Position</label>
           <input type="text" name="heightinput" id="heightinput">
         </div>
     </form>
@@ -90,11 +90,6 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-          //set height
-          $( "#heightinput" ).val($("a-entity").first().attr("position").z));
-          //set width
-          $( "#widthinput" ).val($("a-entity").first().attr("position").x));
-
           //height change event listener
           $( "#heightinput" ).change(function() {
             $("a-entity").first().attr("position").z = $( "#heightinput" ).val();
