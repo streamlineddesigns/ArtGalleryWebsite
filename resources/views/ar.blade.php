@@ -37,7 +37,12 @@
         <a-nft
             type='nft' url="img/descriptors/laurielafrate/laurielafrate"
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
-            <a-image src="img/Pieces as JPEGS/16-min.jpg"></a-image>
+            <a-image 
+                src="img/Pieces as JPEGS/16-min.jpg"
+                scale="5 5 5"
+                position="65 0 -75"
+                >
+            </a-image>
         </a-nft>
 		<a-entity camera></a-entity>
     </a-scene>
