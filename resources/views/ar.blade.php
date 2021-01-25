@@ -41,7 +41,7 @@
                 src="img/Pieces as JPEGS/16-min.jpg"
                 rotation="90 180 0"
                 scale="100 100 100"
-                position="65 0 -75"
+                position="10 0 -75"
                 >
             </a-image>
         </a-nft>
