@@ -84,7 +84,7 @@
                 src="img/Pieces as JPEGS/16-min.jpg"
                 rotation="90 180 0"
                 scale="150 150 150"
-                position="-150 -150 0"
+                position="-225 -200 0"
                 >
             </a-image>
         </a-nft>
@@ -96,17 +96,17 @@
         $(document).ready(function() {
           //x change event listener
           $( "#xinput" ).change(function() {
-            $("a-entity").first().attr("position").x = $( "#xinput" ).val();
+            //$("a-entity").first().attr("position").x = $( "#xinput" ).val();
           });
 
           //y change event listener
           $( "#yinput" ).change(function() {
-            $("a-entity").first().attr("position").y = $( "#yinput" ).val();
+            //$("a-entity").first().attr("position").y = $( "#yinput" ).val();
           });
 
           //z change event listener
           $( "#zinput" ).change(function() {
-            $("a-entity").first().attr("position").z = $( "#zinput" ).val();
+            //$("a-entity").first().attr("position").z = $( "#zinput" ).val();
           });
           //$("a-entity").first().attr("position").x = (screen.width  - $("a-entity").first().attr("scale").x) / 2;
           //$("a-entity").first().attr("position").z = - (screen.height - $("a-entity").first().attr("scale").z) / 2;
