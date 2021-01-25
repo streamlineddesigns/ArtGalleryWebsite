@@ -84,7 +84,7 @@
                 src="img/Pieces as JPEGS/16-min.jpg"
                 rotation="90 180 0"
                 scale="150 150 150"
-                position="-225 -200 0"
+                position="10 0 -75"
                 >
             </a-image>
         </a-nft>
@@ -94,6 +94,9 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
+          $("a-entity").first().attr("position").x = -60;
+          $("a-entity").first().attr("position").y = -120;
+          $("a-entity").first().attr("position").z = 0;
           //x change event listener
           $( "#xinput" ).change(function() {
             //$("a-entity").first().attr("position").x = $( "#xinput" ).val();
