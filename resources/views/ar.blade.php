@@ -51,11 +51,11 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
+        /*$(document).ready(function() {
             var imgHeight = $("#img-dimensions").height();
             var imgWidth = $("#img-dimensions").width();
             $("a-entity").first().attr("position").x = (screen.width / 2) - (imgWidth / 2);;
             $("a-entity").first().attr("position").z = - ((screen.height / 2) - (imgHeight / 2));
-        });
+        });*/
     </script>
 </body>
