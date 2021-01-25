@@ -37,12 +37,7 @@
         <a-nft
             type='nft' url="img/descriptors/laurielafrate/laurielafrate"
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
-            <a-assets>
-                <img id="my-image" src="img/Pieces as JPEGS/16-min.jpg">
-            </a-assets>
-
-            <!-- Using the asset management system. -->
-            <a-image src="#my-image"></a-image>
+            <a-image src="img/Pieces as JPEGS/16-min.jpg"></a-image>
         </a-nft>
 		<a-entity camera></a-entity>
     </a-scene>
