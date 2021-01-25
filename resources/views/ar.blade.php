@@ -35,7 +35,7 @@
 
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'trex' below) -->
         <a-nft
-            type='nft' url="img/descriptors/laurielafrateartlogo/laurielafrateartlogo"
+            type='nft' url="img/descriptors/abstract/abstract"
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
             <a-image 
                 src="img/Pieces as JPEGS/16-min.jpg"
