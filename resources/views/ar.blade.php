@@ -32,7 +32,7 @@
     <a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
-        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;'>
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'trex' below) -->
         <a-nft
@@ -54,8 +54,8 @@
         /*$(document).ready(function() {
             var imgHeight = $("#img-dimensions").height();
             var imgWidth = $("#img-dimensions").width();
-            $("a-entity").first().attr("position").x = (screen.width / 2) - (imgWidth / 2);;
-            $("a-entity").first().attr("position").z = - ((screen.height / 2) - (imgHeight / 2));
+            $("a-entity").first().attr("position").x = (screen.width  - imgWidth) / 2;
+            $("a-entity").first().attr("position").z = - (screen.height - imgHeight) / 2;
         });*/
     </script>
 </body>
