@@ -34,11 +34,13 @@
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
         <a-assets>
-            <img id="my-image" src="img/Pieces as JPEGS/16-min.jpg">
+            <img id="test_img" src="img/Pieces as JPEGS/16-min.jpg">
         </a-assets>
-
-        <!-- Using the asset management system. -->
-        <a-image src="#my-image"></a-image>
+        <a-marker preset="laurielafratev" url="img/descriptors/laurielafrate/laurielafrate">
+            <a-image 
+                rotation="90 0 0"
+                src="#text_img"></a-image>
+        </a-marker>
 		<a-entity camera></a-entity>
     </a-scene>
 
