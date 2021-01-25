@@ -59,12 +59,16 @@
     <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art">
     <form id="input-form">
         <div>
-          <label for="widthinput">X Position</label>
-          <input type="text" name="widthinput" id="widthinput">
+          <label for="xinput">X Position</label>
+          <input type="text" name="xinput" id="xinput">
         </div>
         <div>
-          <label for="heightinput">Y Position</label>
-          <input type="text" name="heightinput" id="heightinput">
+          <label for="yinput">Y Position</label>
+          <input type="text" name="yinput" id="yinput">
+        </div>
+        <div>
+          <label for="zinput">z Position</label>
+          <input type="text" name="zinput" id="zinput">
         </div>
     </form>
     <a-scene
@@ -90,14 +94,19 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-          //height change event listener
-          $( "#heightinput" ).change(function() {
-            $("a-entity").first().attr("position").z = $( "#heightinput" ).val();
+          //x change event listener
+          $( "#xinput" ).change(function() {
+            $("a-entity").first().attr("position").x = $( "#xinput" ).val();
           });
 
-          //width change event listener
-          $( "#widthinput" ).change(function() {
-            $("a-entity").first().attr("position").x = $( "#widthinput" ).val();
+          //y change event listener
+          $( "#yinput" ).change(function() {
+            $("a-entity").first().attr("position").y = $( "#yinput" ).val();
+          });
+
+          //z change event listener
+          $( "#zinput" ).change(function() {
+            $("a-entity").first().attr("position").z = $( "#zinput" ).val();
           });
           //$("a-entity").first().attr("position").x = (screen.width  - $("a-entity").first().attr("scale").x) / 2;
           //$("a-entity").first().attr("position").z = - (screen.height - $("a-entity").first().attr("scale").z) / 2;
