@@ -67,7 +67,7 @@
           <input type="text" name="yinput" id="yinput">
         </div>
         <div>
-          <label for="zinput">z Position</label>
+          <label for="zinput">Z Position</label>
           <input type="text" name="zinput" id="zinput">
         </div>
     </form>
