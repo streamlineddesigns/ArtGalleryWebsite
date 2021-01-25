@@ -39,8 +39,8 @@
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
             <a-image 
                 src="img/Pieces as JPEGS/16-min.jpg"
-                rotation="90 0 0"
-                scale="10 10 10"
+                rotation="90 180 0"
+                scale="100 100 100"
                 position="65 0 -75"
                 >
             </a-image>
