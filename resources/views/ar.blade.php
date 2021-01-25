@@ -36,10 +36,10 @@
         <a-assets>
             <img id="test_img" src="img/Pieces as JPEGS/16-min.jpg">
         </a-assets>
-        <a-marker preset="laurielafratev" url="img/descriptors/laurielafrate/laurielafrate">
+        <a-marker preset="laurielafrate" url="img/descriptors/laurielafrate/laurielafrate">
             <a-image 
                 rotation="90 0 0"
-                src="#text_img"></a-image>
+                src="#test_img"></a-image>
         </a-marker>
 		<a-entity camera></a-entity>
     </a-scene>
