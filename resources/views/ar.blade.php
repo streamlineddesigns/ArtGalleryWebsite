@@ -31,6 +31,10 @@
     flex-direction: column;
     justify-content: center;
     bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    z-index: 100000000;
   }
 </style>
 
