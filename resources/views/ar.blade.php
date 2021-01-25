@@ -39,9 +39,6 @@
 
         <!-- Using the asset management system. -->
         <a-image src="#my-image"></a-image>
-
-        <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-        <a-image src="another-image.png"></a-image>
 		<a-entity camera></a-entity>
     </a-scene>
 
