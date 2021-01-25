@@ -36,6 +36,10 @@
     margin: 0 auto;
     z-index: 100000000;
   }
+
+  #input-form label {
+    color: white;
+  }
 </style>
 
 <!-- rawgithack development URL -->
