@@ -18,6 +18,20 @@
     font-size: 1.25em;
     color: white;
   }
+
+  #img-dimensions {
+    display: none;
+  }
+
+  #input-form {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0px;
+  }
 </style>
 
 <!-- rawgithack development URL -->
@@ -28,7 +42,17 @@
   <div class="arjs-loader">
     <div>Loading, please wait...</div>
   </div>
-    <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art" style="display: none;">
+    <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art">
+    <form id="input-form">
+        <div>
+          <label for="heightinput">height</label>
+          <input type="text" name="heightinput" id="heightinput">
+        </div>
+        <div>
+          <label for="widthinput">width</label>
+          <input type="text" name="widthinput" id="widthinput">
+        </div>
+    </form>
     <a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
@@ -51,11 +75,16 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script>
-        /*$(document).ready(function() {
-            var imgHeight = $("#img-dimensions").height();
-            var imgWidth = $("#img-dimensions").width();
-            $("a-entity").first().attr("position").x = (screen.width  - imgWidth) / 2;
-            $("a-entity").first().attr("position").z = - (screen.height - imgHeight) / 2;
-        });*/
+        $(document).ready(function() {
+          $( "#heightinput" ).change(function() {
+            $("a-entity").first().attr("position").z = $( "#heightinput" ).val();
+          });
+
+          $( "#widthinput" ).change(function() {
+            $("a-entity").first().attr("position").x = $( "#widthinput" ).val();
+          });
+          //$("a-entity").first().attr("position").x = (screen.width  - $("a-entity").first().attr("scale").x) / 2;
+          //$("a-entity").first().attr("position").z = - (screen.height - $("a-entity").first().attr("position").z) / 2;
+        });
     </script>
 </body>
