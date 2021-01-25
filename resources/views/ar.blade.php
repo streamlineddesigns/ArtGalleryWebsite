@@ -33,17 +33,15 @@
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
-        <!-- use rawgithack to retrieve the correct url for nft marker (see 'trex' below) -->
-        <a-nft
-            type='nft' url="img/descriptors/laurielafrate/laurielafrate"
-            smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
-            <a-entity
-                gltf-model='models/scene.gltf'
-                scale="5 5 5"
-                position="65 0 -75"
-                >
-            </a-entity>
-        </a-nft>
+        <a-assets>
+            <img id="my-image" src="img/Pieces as JPEGS/16-min.jpg">
+        </a-assets>
+
+        <!-- Using the asset management system. -->
+        <a-image src="#my-image"></a-image>
+
+        <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+        <a-image src="another-image.png"></a-image>
 		<a-entity camera></a-entity>
     </a-scene>
 
