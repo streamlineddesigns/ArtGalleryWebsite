@@ -59,12 +59,12 @@
     <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art">
     <form id="input-form">
         <div>
-          <label for="heightinput">height</label>
-          <input type="text" name="heightinput" id="heightinput">
+          <label for="widthinput">X</label>
+          <input type="text" name="widthinput" id="widthinput">
         </div>
         <div>
-          <label for="widthinput">width</label>
-          <input type="text" name="widthinput" id="widthinput">
+          <label for="heightinput">Y</label>
+          <input type="text" name="heightinput" id="heightinput">
         </div>
     </form>
     <a-scene
@@ -90,15 +90,22 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
+          //set height
+          $( "#heightinput" ).val($("a-entity").first().attr("position").z));
+          //set width
+          $( "#widthinput" ).val($("a-entity").first().attr("position").x));
+
+          //height change event listener
           $( "#heightinput" ).change(function() {
             $("a-entity").first().attr("position").z = $( "#heightinput" ).val();
           });
 
+          //width change event listener
           $( "#widthinput" ).change(function() {
             $("a-entity").first().attr("position").x = $( "#widthinput" ).val();
           });
           //$("a-entity").first().attr("position").x = (screen.width  - $("a-entity").first().attr("scale").x) / 2;
-          //$("a-entity").first().attr("position").z = - (screen.height - $("a-entity").first().attr("position").z) / 2;
+          //$("a-entity").first().attr("position").z = - (screen.height - $("a-entity").first().attr("scale").z) / 2;
         });
     </script>
 </body>
