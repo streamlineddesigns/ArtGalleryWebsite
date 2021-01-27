@@ -706,6 +706,13 @@ textarea {
   .btn-custom {
     font-size: 16px !important;
   }
+
+  #footeremail {
+    margin: 0 auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+  }
 }
 
 /* Large devices (desktops, 992px and up)  */

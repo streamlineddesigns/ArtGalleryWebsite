@@ -32,7 +32,7 @@
 
   <div>
     <i class="fa fa-envelope"></i>
-    <p><a href="mailto:LaurieLaFrateArtGallery@gmail.com">LaurieLaFrateArtGallery@gmail.com</a></p>
+    <p><a href="mailto:LaurieLaFrateArtGallery@gmail.com" id="footeremail">LaurieLaFrateArtGallery@gmail.com</a></p>
   </div>
 
 </div>
