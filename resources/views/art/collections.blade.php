@@ -93,10 +93,10 @@
             <!-- About 1 -->
             <div class="container custom-container">
                 <div class="row">
-                    <div class="col-lg-7 px-0">
+                    <div class="col-lg-6 px-0">
                         <img class="img-fluid" src="{{url( $value->image_url)}}" alt="Painting">
                     </div>
-                    <div class="col-lg-5 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
+                    <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
                         <h2 class="row-header row-header-large text-transform-none" style="color: {{$value->name_color}};">{{$value->name}}</h2>
                         <p>
                             {{$value->description}}
@@ -113,10 +113,10 @@
             <!-- About 2 -->
             <div class="container custom-container">
                 <div class="row">
-                    <div class="col-lg-7 px-0">
+                    <div class="col-lg-6 px-0">
                         <img class="img-fluid" src="{{url( $value->image_url)}}" alt="Painting" style="float: right;">
                     </div>
-                    <div class="order-lg-first col-lg-5 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
+                    <div class="order-lg-first col-lg-6 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
                         <h2 class="row-header row-header-large text-transform-none" style="color: {{$value->name_color}};">{{$value->name}}</h2>
                         <p>
                             {{$value->description}}
