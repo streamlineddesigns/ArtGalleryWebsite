@@ -71,7 +71,7 @@
   <!--/Hero Section-->
 
   <!-- Collection Overview -->
-  <div class="container custom-container py-5" id="more">
+  <div class="container custom-container py-4" id="more">
     <div class="row">
         <div class="col-lg-12 d-flex align-items-center flex-column justify-content-center text-center py-5 px-5">
             <h2 class="row-header row-header-large text-transform-none collection_name_color">
