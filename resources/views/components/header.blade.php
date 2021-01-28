@@ -9,7 +9,7 @@ use App\Models\Collection;
       <span class="hidden-on-mobile">Laurie LaFrate</span>
       <span class="hidden-on-mobile">Art Gallery</span>
     </a>
-    <a class="hidden-on-desktop no-underline-link" href="/"><span class="laurie-font">Laurie LaFrate</span></a>
+    <a class="hidden-on-desktop no-underline-link d-flex align-items-center" href="/"><span class="laurie-font">Laurie LaFrate</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
