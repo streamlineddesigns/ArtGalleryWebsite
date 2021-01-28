@@ -63,12 +63,15 @@
 
   <!--Hero Section-->
   <div class="hero-image collection_background_image">
-    
+    <div class="cta-container">
+        <p class="cta-text">Explore the Collection</p>
+        <a href="#more" class="hero-cta-button chevron-arrow"><img src="{{url('img/social/chevron.png')}}" class="img-fluid" alt="downward arrow"></a>
+    </div>
   </div>
   <!--/Hero Section-->
 
   <!-- Collection Overview -->
-  <div class="container custom-container py-5">
+  <div class="container custom-container py-5" id="more">
     <div class="row">
         <div class="col-lg-12 d-flex align-items-center flex-column justify-content-center text-center py-5 px-5">
             <h2 class="row-header row-header-large text-transform-none collection_name_color">
@@ -138,6 +141,7 @@
 
   <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{url('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+  <script src="{{url('js/main.js')}}"></script>
 </body>
 
 </html>
