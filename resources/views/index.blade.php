@@ -31,8 +31,8 @@
   <!--Hero Section-->
   <div class="hero-image">
     <div class="cta-container">
-      <p class="cta-text">Learn More!</p>
-      <a href="#about-section" class="hero-cta-button chevron-arrow"><img src="{{url('img/social/chevron.png')}}" class="img-fluid" alt="downward arrow"></a>
+      <p class="cta-text">View Gallery!</p>
+      <a href="#artgallery" class="hero-cta-button chevron-arrow"><img src="{{url('img/social/chevron.png')}}" class="img-fluid" alt="downward arrow"></a>
     </div>
   </div>
   <!--/Hero Section-->
@@ -72,8 +72,7 @@
   <!--Carosel Section-->
   <div class="container custom-container" id="artgallery">
     <hr class="hidden-on-desktop">
-    <span class="row-header row-header-small text-center hidden-on-desktop" style='font-size: 1rem; display: block;'>Laurie LaFrate</span>
-    <h2 class="row-header row-header-large text-center hidden-on-desktop">Art Gallery</h2>
+    <h2 class="row-header row-header-large text-center hidden-on-desktop lowercase">Art Gallery</h2>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         {{$icp = 0}}

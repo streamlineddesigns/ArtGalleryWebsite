@@ -389,6 +389,7 @@ textarea {
 }
 
 .hero-image {
+  position: relative;
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover !important;
@@ -424,6 +425,16 @@ textarea {
   text-transform: capitalize;
   font-size: 22px;
   font-weight: 800;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 225px;
+  text-align: center;
+}
+
+.lowercase {
+  text-transform: capitalize !important;
 }
 
 .no-underline-link:active, .no-underline-link:focus, .no-underline-link:hover{
@@ -702,11 +713,6 @@ textarea {
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url("../img/Pieces as JPEGS/201211_IMG_0027_MOBILE.jpg");
   }
 
-  .cta-container {
-    display: none;
-    visibility: hidden;
-  }
-
   .painting-footer-text {
     position: initial;
   }
@@ -720,6 +726,27 @@ textarea {
     position: absolute;
     left: 0px;
     right: 0px;
+  }
+
+  .cta-container {
+    bottom: 25px;
+  }
+
+  .cta-text {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .chevron-arrow img {
+    max-height: 50px;
+    max-width: 50px;
+  }
+
+  .custom-carosel-button {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-top: 10px !important;
+    padding-bottom: 5px !important;
   }
 }
 

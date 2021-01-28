@@ -38,10 +38,10 @@
 
   <!--Hero Section-->
   <div class="hero-image hero-image-about">
-    <div class="cta-container">
+      <!--<div class="cta-container">
         <p class="cta-text">Learn More!</p>
         <a href="#about-section" class="hero-cta-button chevron-arrow"><img src="{{url('img/social/chevron.png')}}" class="img-fluid" alt="downward arrow"></a>
-      </div>
+      </div>-->
   </div>
   <!--/Hero Section-->
 
