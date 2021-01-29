@@ -1,4 +1,5 @@
   <!-- Contact -->
+  <hr class=m-0>
   <div class="container custom-container" id="contact">
     <div class="row">
       <div class="col-lg-6 px-0">
