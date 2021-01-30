@@ -99,7 +99,7 @@
                     <div class="col-lg-6 px-0 collection-img-container">
                         <img class="img-fluid collection-img" src="{{url( $value->image_url)}}" alt="Painting">
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
+                    <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded collection_text_r">
                         <h2 class="row-header row-header-large text-transform-none" style="color: {{$value->name_color}};">{{$value->name}}</h2>
                         <p>
                             {{$value->description}}
@@ -119,7 +119,7 @@
                     <div class="col-lg-6 px-0 collection-img-container">
                         <img class="img-fluid collection-img" src="{{url( $value->image_url)}}" alt="Painting" style="float: right;">
                     </div>
-                    <div class="order-lg-first col-lg-6 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded">
+                    <div class="order-lg-first col-lg-6 d-flex align-items-center flex-column justify-content-center text-center py-3 col-mobile-padded collection_text_l">
                         <h2 class="row-header row-header-large text-transform-none" style="color: {{$value->name_color}};">{{$value->name}}</h2>
                         <p>
                             {{$value->description}}

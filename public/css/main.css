@@ -649,7 +649,7 @@ textarea {
 
 .collection-img {
   float: none !important;
-  width: 80%;
+  width: 75%;
   background: #fff;
   box-shadow: 0 9px 10px rgba(255,255,255,.08), 0 0 9px;
   margin-top: 70px;
@@ -768,6 +768,12 @@ textarea {
 
   .collection-img {
     margin-bottom: 0px !important;
+    width: 80%;
+  }
+
+  .collection_text_r, .collection_text_l {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
   }
 }
 
@@ -793,6 +799,14 @@ textarea {
   .hidden-on-desktop {
     display: none !important;
     visibility: hidden;
+  }
+
+  .collection_text_r {
+    padding-right: 48px !important;
+  }
+  
+  .collection_text_l {
+    padding-left: 48px !important;
   }
 }
 
