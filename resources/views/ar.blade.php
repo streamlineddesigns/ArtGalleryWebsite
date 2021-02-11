@@ -4,16 +4,7 @@
 <head>
   <x-analytics/>
   <meta charset="utf-8">
-  <title>View Laurie LaFrate's Paitings</title>
-  <meta name="description" content="View original Laurie LaFrate painting's in your home instantly using Augmented Reality!">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="Laurie LaFrate">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:author" content="Streamlined Designs">
-
+  <title>View Laurie LaFrate's Artwork</title>
   <link rel="stylesheet" href="{{url('css/main.css')}}">
   <link rel="stylesheet" href="{{url('vendor/bootstrap/css/bootstrap.min.css')}}">
 
