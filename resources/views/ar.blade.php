@@ -75,14 +75,13 @@
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
-
+        <a-assets>
+          <img id="transpImage" src="img/Pieces as JPEGS/16-min.jpg">
+        </a-assets>
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'trex' below) -->
         <a-nft
             type='nft' url="img/descriptors/abstract/abstract"
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
-            <a-assets>
-              <img id="transpImage" src="img/Pieces as JPEGS/16-min.jpg">
-            </a-assets>
 
             <a-image 
                 src="#transpImage"
