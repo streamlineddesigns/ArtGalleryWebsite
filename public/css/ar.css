@@ -23,7 +23,7 @@
 
 #bottom-nav {
     position: absolute;
-    height: 200px;
+    height: 100px;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -33,11 +33,5 @@
     right: 0px;
     margin: 0 auto;
     z-index: 100000000;
-    background-color: red;
-}
-
-#bottom-nav div {
-    width: 100%;
     background-color: white;
-    height: 200px;
 }
