@@ -35,3 +35,7 @@
     z-index: 100000000;
     background-color: white;
 }
+
+.carousel-control-next, .carousel-control-prev {
+    top: 25px !important;
+}
