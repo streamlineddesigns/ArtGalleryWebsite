@@ -46,7 +46,7 @@ var paintings =
 		"name": "It’s Unfinished",
 		"link": "img/Pieces as JPEGS/17-min.jpg"
 	}, {
-		"name": "Light at End of the Tunnel",
+		"name": "Light at the End of the Tunnel",
 		"link": "img/Pieces as JPEGS/18-min.jpg"
 	}, {
 		"name": "Child’s Play",
