@@ -1,79 +1,59 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
 <head>
-  <x-analytics/>
-  <meta charset="utf-8">
-  <title>View Laurie LaFrates Artwork</title>
-  <meta name="description" content="{{$collection->description}}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="View Laurie LaFrates Artwork">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:author" content="Streamlined Designs">
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<style>
+  .arjs-loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-  <link rel="manifest" href="{{url('site.webmanifest')}}">
-  <link rel="apple-touch-icon" href="{{url('icon.png')}}">
-  <!-- Place favicon.ico in the root directory -->
+  .arjs-loader div {
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+  }
 
-  <link rel="stylesheet" href="{{url('css/main.css')}}">
-  <link rel="stylesheet" href="{{url('vendor/bootstrap/css/bootstrap.min.css')}}">
-  
-  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  #img-dimensions {
+    display: none;
+  }
 
-  <style>
-    .arjs-loader {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  #input-form {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    z-index: 100000000;
+  }
 
-    .arjs-loader div {
-      text-align: center;
-      font-size: 1.25em;
-      color: white;
-    }
+  #input-form div label {
+    color: white;
+  }
 
-    #img-dimensions {
-      display: none;
-    }
+  #input-form div input {
+    height: 35px;
+    width: 200px;
+    font-size: 22px;
+  }
+</style>
 
-    #input-form {
-      position: absolute;
-      height: 200px;
-      width: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin: 0 auto;
-      z-index: 100000000;
-    }
-
-    #input-form div label {
-      color: white;
-    }
-
-    #input-form div input {
-      height: 35px;
-      width: 200px;
-      font-size: 22px;
-    }
-  </style>
-
-  <!-- rawgithack development URL -->
-  <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
-
+<!-- rawgithack development URL -->
+<script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
