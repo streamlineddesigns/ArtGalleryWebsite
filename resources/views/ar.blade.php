@@ -21,6 +21,30 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!--ar css-->
   <link rel="stylesheet" href="{{url('css/ar.css')}}">
+  <style>
+    .arjs-loader {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arjs-loader div {
+        text-align: center;
+        font-size: 1.25em;
+        color: white;
+    }
+
+    #img-dimensions {
+        display: none;
+    }
+  </style>
   <!-- rawgithack development URL -->
   <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
 </head>
