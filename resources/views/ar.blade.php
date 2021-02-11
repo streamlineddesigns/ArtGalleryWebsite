@@ -5,6 +5,7 @@
   <x-analytics/>
   <meta charset="utf-8">
   <title>View Laurie LaFrate's Artwork</title>
+  <link rel="stylesheet" href="{{url('css/main.css')}}">
   <link rel="stylesheet" href="{{url('vendor/bootstrap/css/bootstrap.min.css')}}">
 
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -106,6 +107,7 @@
     </a-scene>
 
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="{{url('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
     <script>
         $(document).ready(function() {
           $("a-entity").first().attr("position").x = -60;
