@@ -75,16 +75,14 @@
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
-        <a-assets>
-          <img id="transpImage" src="img/Pieces as JPEGS/16-min.jpg">
-        </a-assets>
+
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'trex' below) -->
         <a-nft
             type='nft' url="img/descriptors/abstract/abstract"
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
-
             <a-image 
-                src="#transpImage"
+                id="artwork"
+                src="img/Pieces as JPEGS/16-min.jpg"
                 rotation="90 180 0"
                 scale="150 150 150"
                 position="10 0 -75"
@@ -100,22 +98,7 @@
           $("a-entity").first().attr("position").x = -60;
           $("a-entity").first().attr("position").y = -120;
           $("a-entity").first().attr("position").z = 0;
-          //x change event listener
-          $( "#xinput" ).change(function() {
-            //$("a-entity").first().attr("position").x = $( "#xinput" ).val();
-          });
-
-          //y change event listener
-          $( "#yinput" ).change(function() {
-            //$("a-entity").first().attr("position").y = $( "#yinput" ).val();
-          });
-
-          //z change event listener
-          $( "#zinput" ).change(function() {
-            //$("a-entity").first().attr("position").z = $( "#zinput" ).val();
-          });
-          //$("a-entity").first().attr("position").x = (screen.width  - $("a-entity").first().attr("scale").x) / 2;
-          //$("a-entity").first().attr("position").z = - (screen.height - $("a-entity").first().attr("scale").z) / 2;
+          $("#artwork").attr("src") = "img/Pieces as JPEGS/1-min.jpg";
         });
     </script>
 </body>
