@@ -33,10 +33,10 @@
 
   <x-header/>
 
-    <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art">
     <div id="bottom-nav">
-      
+
     </div>
+    
     <a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
