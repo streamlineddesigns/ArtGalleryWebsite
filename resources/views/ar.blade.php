@@ -34,20 +34,9 @@
   <x-header/>
 
     <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art">
-    <form id="input-form">
-        <div>
-          <label for="xinput">X Position</label>
-          <input type="text" name="xinput" id="xinput">
-        </div>
-        <div>
-          <label for="yinput">Y Position</label>
-          <input type="text" name="yinput" id="yinput">
-        </div>
-        <div>
-          <label for="zinput">Z Position</label>
-          <input type="text" name="zinput" id="zinput">
-        </div>
-    </form>
+    <div id="bottom-nav">
+      
+    </div>
     <a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
