@@ -1,64 +1,58 @@
 var paintings = 
 {
 	"data": [{
-		"name": "test1",
+		"name": "Spring in November",
 		"link": "img/Pieces as JPEGS/1-min.jpg"
 	}, {
-		"name": "test2",
+		"name": "The Phantom",
 		"link": "img/Pieces as JPEGS/2-min.jpg"
 	}, {
-		"name": "test3",
-		"link": "img/Pieces as JPEGS/3-min.jpg"
-	}, {
-		"name": "test4",
-		"link": "img/Pieces as JPEGS/4-min.jpg"
-	}, {
-		"name": "test5",
+		"name": "True Love",
 		"link": "img/Pieces as JPEGS/5-min.jpg"
 	}, {
-		"name": "test6",
+		"name": "Hodgepodge in Space",
 		"link": "img/Pieces as JPEGS/6-min.jpg"
 	}, {
-		"name": "test7",
+		"name": "Mishmash on the Beach",
 		"link": "img/Pieces as JPEGS/7-min.jpg"
 	}, {
-		"name": "test8",
+		"name": "After the Rain",
 		"link": "img/Pieces as JPEGS/8-min.jpg"
 	}, {
-		"name": "test9",
+		"name": "Skribble, Scrabble & Wine",
 		"link": "img/Pieces as JPEGS/9-min.jpg"
 	}, {
-		"name": "test10",
+		"name": "Kerfuffle",
 		"link": "img/Pieces as JPEGS/10-min.jpg"
 	}, {
-		"name": "test11",
+		"name": "The Mudslide",
 		"link": "img/Pieces as JPEGS/11-min.jpg"
 	}, {
-		"name": "test12",
+		"name": "Spark",
 		"link": "img/Pieces as JPEGS/12-min.jpg"
 	}, {
-		"name": "test13",
+		"name": "Camouflage",
 		"link": "img/Pieces as JPEGS/13-min.jpg"
 	}, {
-		"name": "test14",
+		"name": "Crazy Blooms",
 		"link": "img/Pieces as JPEGS/14-min.jpg"
 	}, {
-		"name": "test15",
+		"name": "Imagine",
 		"link": "img/Pieces as JPEGS/15-min.jpg"
 	}, {
-		"name": "test16",
+		"name": "Garden Escape",
 		"link": "img/Pieces as JPEGS/16-min.jpg"
 	}, {
-		"name": "test17",
+		"name": "It’s Unfinished",
 		"link": "img/Pieces as JPEGS/17-min.jpg"
 	}, {
-		"name": "test18",
+		"name": "Light at End of the Tunnel",
 		"link": "img/Pieces as JPEGS/18-min.jpg"
 	}, {
-		"name": "test19",
+		"name": "Child’s Play",
 		"link": "img/Pieces as JPEGS/19-min.jpg"
 	}, {
-		"name": "test20",
+		"name": "Spring Forward",
 		"link": "img/Pieces as JPEGS/20-min.jpg"
 	}]
 };
@@ -67,7 +61,8 @@ $(document).ready(function() {
     $("a-entity").first().attr("position").x = -60;
     $("a-entity").first().attr("position").y = -120;
     $("a-entity").first().attr("position").z = 0;
-    
+    //name
+    $("#artname").text(paintings.data[0].name);
     //navigation width
     $("#bottom-nav").css("width", screen.width);
 
