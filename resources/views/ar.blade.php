@@ -1,3 +1,6 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <style>
   .arjs-loader {
@@ -50,6 +53,7 @@
 
 <!-- rawgithack development URL -->
 <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
+</head>
 
 <body style='margin : 0px; overflow: hidden;'>
 
@@ -59,7 +63,7 @@
   </div>
 
   <x-header/>
-  
+
     <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art">
     <form id="input-form">
         <div>
@@ -105,3 +109,5 @@
         });
     </script>
 </body>
+
+</html>
