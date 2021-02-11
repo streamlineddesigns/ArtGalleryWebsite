@@ -33,5 +33,11 @@
     right: 0px;
     margin: 0 auto;
     z-index: 100000000;
+    background-color: red;
 }
 
+#bottom-nav div {
+    width: 100%;
+    background-color: white;
+    height: 200px;
+}

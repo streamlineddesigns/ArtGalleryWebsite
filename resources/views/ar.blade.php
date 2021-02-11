@@ -34,9 +34,11 @@
   <x-header/>
 
     <div id="bottom-nav">
+      <div class="">
 
+      </div>
     </div>
-    
+
     <a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
