@@ -27,8 +27,8 @@ Route::get('about', function () {
     return view('about');
 });
 
-Route::get('ar', function () {
-    return view('ar');
+Route::get('AugmentedReality', function () {
+    return view('AugmentedReality');
 });
 
 Route::post('contact', [ContactController::class, 'index'])->name('contact');
