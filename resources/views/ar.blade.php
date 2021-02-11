@@ -52,10 +52,14 @@
 <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
 
 <body style='margin : 0px; overflow: hidden;'>
+
    <!-- minimal loader shown until image descriptors are loaded -->
   <div class="arjs-loader">
     <div>Loading, please wait...</div>
   </div>
+
+  <x-header/>
+  
     <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art">
     <form id="input-form">
         <div>
