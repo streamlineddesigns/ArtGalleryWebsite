@@ -38,7 +38,7 @@
         <button class="btn-custom custom-carosel-button ml-3" aria-label="Previous Image Button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
         <span class="sr-only">Previous</span>
       </a>
-      <span>Name Here</span>
+      <span id="artname">Painting</span>
       <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
         <button class="btn-custom custom-carosel-button mr-3" aria-label="Next Image Button"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
         <span class="sr-only">Next</span>

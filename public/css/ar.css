@@ -39,3 +39,11 @@
 .carousel-control-next, .carousel-control-prev {
     top: 25px !important;
 }
+
+#artname {
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-weight: 100;
+    line-height: 1.5;
+    color: #615E5E;
+}
