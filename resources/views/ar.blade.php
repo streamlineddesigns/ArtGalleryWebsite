@@ -81,7 +81,6 @@
             type='nft' url="img/descriptors/abstract/abstract"
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
             <a-image 
-                id="artwork"
                 src="img/Pieces as JPEGS/16-min.jpg"
                 rotation="90 180 0"
                 scale="150 150 150"
@@ -98,7 +97,7 @@
           $("a-entity").first().attr("position").x = -60;
           $("a-entity").first().attr("position").y = -120;
           $("a-entity").first().attr("position").z = 0;
-          $("#artwork").attr("src") = "img/Pieces as JPEGS/1-min.jpg";
+          $("a-image").attr("src") = "img/Pieces as JPEGS/1-min.jpg";
         });
     </script>
 </body>
