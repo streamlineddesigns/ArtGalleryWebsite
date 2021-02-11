@@ -80,8 +80,12 @@
         <a-nft
             type='nft' url="img/descriptors/abstract/abstract"
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
+            <a-assets>
+              <img id="transpImage" src="img/Pieces as JPEGS/16-min.jpg">
+            </a-assets>
+
             <a-image 
-                src="img/Pieces as JPEGS/16-min.jpg"
+                src="#transpImage"
                 rotation="90 180 0"
                 scale="150 150 150"
                 position="10 0 -75"
