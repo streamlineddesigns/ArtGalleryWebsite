@@ -15,11 +15,12 @@
   <meta property="og:author" content="Streamlined Designs">
 
   <link rel="stylesheet" href="{{url('css/main.css')}}">
-  <link rel="stylesheet" href="{{url('css/ar.css')}}">
   <link rel="stylesheet" href="{{url('vendor/bootstrap/css/bootstrap.min.css')}}">
 
   <!--aframe-->
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!--ar css-->
+  <link rel="stylesheet" href="{{url('css/ar.css')}}">
   <!-- rawgithack development URL -->
   <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
 </head>
@@ -33,9 +34,7 @@
   <x-header/>
 
     <img src="img/Pieces as JPEGS/16-min.jpg" id="img-dimensions" alt="abstract art">
-    <div id="bottom-nav">
-
-    </div>
+    
     <a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
