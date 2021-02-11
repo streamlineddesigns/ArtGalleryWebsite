@@ -4,8 +4,18 @@
 <head>
   <x-analytics/>
   <meta charset="utf-8">
-  <title>View Laurie LaFrate's Artwork</title>
+  <title>View Laurie LaFrate's Paintings</title>
+  <meta name="description" content="View original Laurie LaFrate painting's in your home instantly using Augmented Reality!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Laurie LaFrate">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:author" content="Streamlined Designs">
+
   <link rel="stylesheet" href="{{url('css/main.css')}}">
+  <link rel="stylesheet" href="{{url('css/ar.css')}}">
   <link rel="stylesheet" href="{{url('vendor/bootstrap/css/bootstrap.min.css')}}">
 
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -108,14 +118,7 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="{{url('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
-    <script>
-        $(document).ready(function() {
-          $("a-entity").first().attr("position").x = -60;
-          $("a-entity").first().attr("position").y = -120;
-          $("a-entity").first().attr("position").z = 0;
-          $("a-image").attr("src", "img/Pieces as JPEGS/1-min.jpg");
-        });
-    </script>
+    <script src="{{url('js/ar.js')}}"></script>
 </body>
 
 </html>
