@@ -2,10 +2,10 @@
   <hr class=m-0>
   <div class="container custom-container" id="contact">
     <div class="row">
-      <div class="col-lg-6 px-0">
+      <div class="col-lg-5 px-0">
         <img class="img-fluid" src="{{url('img/Pics of Laurie/IMG_1536.jpg')}}" alt="Laurie sitting in a chair">
       </div>
-      <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center text-center py-3">
+      <div class="col-lg-7 d-flex align-items-center flex-column justify-content-center text-center py-3">
         <span class="row-header row-header-small">Contact Us</span>
         <h2 class="row-header row-header-large">Laurie LaFrate <span>Art Gallery</span></h2>
         <p>
