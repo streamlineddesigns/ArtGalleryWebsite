@@ -27,6 +27,8 @@ Route::get('about', function () {
     return view('about');
 });
 
+Route::get('thankyou', [ContactController::class, 'thankyou'])->name('thankyou');
+
 Route::get('AugmentedReality', function () {
     return view('AugmentedReality');
 });

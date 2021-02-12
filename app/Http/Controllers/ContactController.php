@@ -19,8 +19,15 @@ class ContactController extends Controller
         ]);
 
         $this->sendemail($request);
+        
+        $collections = Collection::all()->reverse();
+        return redirect('thankyou')->with(compact('collections'));
+    }
 
-        return back()->with('success', 'Message sent successfully!');
+    public function thankYou() 
+    {
+        $collections = Collection::all()->reverse();
+        return View('thankyou', compact('collections'));
     }
 
     public function sendEmail(Request $request)
