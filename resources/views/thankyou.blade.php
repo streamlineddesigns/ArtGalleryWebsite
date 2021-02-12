@@ -5,11 +5,11 @@
   <x-analytics/>
   <x-conversion/>
   <meta charset="utf-8">
-  <title>About Laurie LaFrate</title>
+  <title>Thank you</title>
   <meta name="description" content="Extraordinary artwork by Laurie LaFrate for extraordinary residential and commercial spaces – crafted with love, from a studio on New York's Upper East Side.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="About Laurie LaFrate Art Gallery">
+  <meta property="og:title" content="Thank you">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
