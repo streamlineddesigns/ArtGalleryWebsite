@@ -40,6 +40,10 @@
             $(".hex-color-picker-input").each(function() {
                 $(this).hexColorPicker();
             });
+            
+            $(".form-control").click(function() {
+                $(".picker-form input").attr("readonly", false);
+            });
         });
     </script>
 </body>
