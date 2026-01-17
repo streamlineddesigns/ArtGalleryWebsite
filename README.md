@@ -1,12 +1,12 @@
 ## The following is an overview of the tech stack and dependencies used by this application
-Laravel - PHP MVC Framework
-PHP - Controllers / Back end scripting
-Eloquent ORM - The Models / Simplified SQL Database access
-Bootstrap - Front End Responsive libary
-Vue - Used in the views
-JavaScript - Used in the views
-HTML5 - Used in the views
-CSS3 - Used in the views
+Laravel - PHP MVC Framework  
+PHP - Controllers / Back end scripting  
+Eloquent ORM - The Models / Simplified SQL Database access  
+Bootstrap - Front End Responsive libary  
+Vue - Used in the views  
+JavaScript - Used in the views  
+HTML5 - Used in the views  
+CSS3 - Used in the views  
 
 ## SSH Into The Server
 run `ssh root@ipaddressofyourserver` and type in password when prompted unless using ssh keys then you'll login automatically
